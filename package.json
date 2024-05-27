@@ -1,0 +1,26 @@
+{
+  "name": "heliosrental2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass ./sass/main.scss:./css/styles.css",
+    "build-min": "sass ./sass/main.scss:./css/styles.min.css --style compressed",
+    "watch": "sass --watch ./sass/main.scss:./css/styles.css",
+    "watch-min": "sass --watch ./sass/main.scss:./css/styles.min.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qwimik/heliosrental2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Qwimik/heliosrental2/issues"
+  },
+  "homepage": "https://github.com/Qwimik/heliosrental2#readme",
+  "devDependencies": {
+    "sass": "^1.77.2"
+  }
+}
