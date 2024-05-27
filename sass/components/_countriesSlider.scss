@@ -1,0 +1,156 @@
+.countries_slide-content {
+    position: relative;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.countries_slide-bg {
+    background-color: $color-bg-dark;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    right: -100%;
+    bottom: 0;
+}
+
+.countries_slide-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.countries_slide-title {
+    font-size: 30px;
+    font-weight: 500;
+    color: $color-white;
+    z-index: 99;
+    position: relative;
+    text-align: center;
+    margin: 0 !important;
+}
+
+.countries_slide-btn {
+    position: relative;
+    display: inline-block;
+    padding: 10px 23px;
+    font-size: 13px;
+    line-height: 1.3;
+    background-color: $color-red;
+    color: $color-white !important;
+    border: none;
+    border-radius: 0.50px;
+    z-index: 99;
+    width: 50px;
+    margin-left: auto;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+        background-color: $color-red-bg;
+        text-decoration: none;
+    }
+}
+
+.slick-arrow {
+    top: -15% !important;
+    width: 0;
+}
+
+.slick-prev {
+    &::before {
+        transition: color 0.3s ease-out;
+    }
+
+    &:hover:before {
+        color: $color-white !important;
+    }
+}
+
+.slick-next {
+    right: 0;
+    left: 30%;
+    transition: color 0.3s ease-out;
+
+    &::before {
+        transition: color 0.3s ease-out;
+    }
+
+    &:hover:before {
+        color: $color-white !important;
+    }
+}
+
+.slick-track {
+    display: flex;
+    gap: 20px;
+}
+
+.countries_slide {
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.05);
+        position: relative;
+        z-index: 99;
+    }
+}
+
+.countries_slide img {
+    background: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0) 100%);
+    border-radius: 10px;
+    width: 300px;
+}
+
+.countries_slide-link {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.countries_slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    font-weight: 500;
+    z-index: 99;
+    font-size: 30px;
+}
+
+.countries_slide-text--shadow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 80px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+@media only screen and (min-width: $screen__m) {
+    .slick-next {
+        left: 10%;
+    }
+}
+
+@media only screen and (min-width: $screen__l) {
+
+    .countries_slide-nav {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .slick-prev {
+        left: 80%;
+    }
+
+    .slick-next {
+        left: 85%;
+    }
+
+    .countries_slide-btn {
+        margin: 0;
+    }
+}
