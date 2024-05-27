@@ -105,6 +105,8 @@
             </div>
         </div>
         <!-- HeaderMobileMenu end -->
+    </header>
+    <main>
         <!-- Hero start -->
         <section id="hero" class="hero_section"><!--data-mage-init='{"Magento_Theme/js/sections/hero":{}}'-->
             <div class="hero_wrapper">
@@ -546,45 +548,313 @@
         </section>
         <!-- best_offers end -->
         <!-- invest_together start -->
-        <!-- <section class="invest-together_section">
-            <h3 class="invest-together_title"><?= $escaper->escapeHtml(__('We are collecting a pool of investors for the purchase of objects.')) ?></h3>
-            <h3 class="invest-together_subtitle"><?= $escaper->escapeHtml(__('with a discount and profitability from 15% per annum')) ?></h3>
+        <section class="invest-together_section">
+            <h3 class="invest-together_title">We are collecting a pool of investors for the purchase of objects.</h3>
+            <h3 class="invest-together_subtitle">with a discount and profitability from 15% per annum</h3>
             <div class="invest-together-content">
                 <div class="invest-together_detail">
-                    <p class="invest-together-text"><?= $escaper->escapeHtml(__('starting price')) ?></p>
-                    <p class="invest-together-price"><?= $escaper->escapeHtml(__('60 000$')) ?></p>
-                    <a href="<?= $escaper->escapeUrl($baseUrl) ?>"><?= $escaper->escapeHtml(__('Complex in Batumi before the start of sales')) ?></a>
+                    <p class="invest-together-text">starting price</p>
+                    <p class="invest-together-price">60 000$</p>
+                    <a href="#">Complex in Batumi before the start of sales</a>
                     <div class="invest-together_location">
-                        <img width="16" height="16" src="<?= $escaper->escapeUrl($this->getViewFileUrl('images/sections/svg/location_white.svg')); ?>" alt="<?= $escaper->escapeHtmlAttr(__('location img')) ?>">
-                        <p><?= $escaper->escapeHtml(__('Georgia')) ?></p>
+                        <img width="16" height="16" src="./images/sections/svg/location_white.svg" alt="location img">
+                        <p>Georgia</p>
                     </div>
                 </div>
                 <div class="invest-together_detail">
-                    <p class="invest-together-text"><?= $escaper->escapeHtml(__('starting price')) ?></p>
-                    <p class="invest-together-price"><?= $escaper->escapeHtml(__('127 000$')) ?></p>
-                    <a href="<?= $escaper->escapeUrl($baseUrl) ?>"><?= $escaper->escapeHtml(__('Villas in pre-sale')) ?></a>
+                    <p class="invest-together-text">starting price</p>
+                    <p class="invest-together-price">127 000$</p>
+                    <a href="#">Villas in pre-sale</a>
                     <div class="invest-together_location">
-                        <img width="16" height="16" src="<?= $escaper->escapeUrl($this->getViewFileUrl('images/sections/svg/location_white.svg')); ?>" alt="<?= $escaper->escapeHtmlAttr(__('location img')) ?>">
-                        <p><?= $escaper->escapeHtml(__('Panama')) ?></p>
+                        <img width="16" height="16" src="./images/sections/svg/location_white.svg" alt="location img">
+                        <p>Panama</p>
                     </div>
                 </div>
                 <div class="invest-together_detail">
-                    <p class="invest-together-text"><?= $escaper->escapeHtml(__('starting price')) ?></p>
-                    <p class="invest-together-price"><?= $escaper->escapeHtml(__('165 000$')) ?></p>
-                    <a href="<?= $escaper->escapeUrl($baseUrl) ?>"><?= $escaper->escapeHtml(__('Ultramodern apartments in Panama')) ?></a>
+                    <p class="invest-together-text">starting price</p>
+                    <p class="invest-together-price">165 000$</p>
+                    <a href="#">Ultramodern apartments in Panama</a>
                     <div class="invest-together_location">
-                        <img width="16" height="16" src="<?= $escaper->escapeUrl($this->getViewFileUrl('images/sections/svg/location_white.svg')); ?>" alt="<?= $escaper->escapeHtmlAttr(__('location img')) ?>">
-                        <p><?= $escaper->escapeHtml(__('Panama')) ?></p>
+                        <img width="16" height="16" src="./images/sections/svg/location_white.svg" alt="location img">
+                        <p>Panama</p>
                     </div>
                 </div>
             </div>
-            <a class="invest-together-btn" href="<?= $escaper->escapeUrl($baseUrl) ?>"><?= $escaper->escapeHtml(__('Get an offer for other countries')) ?></a>
-        </section> -->
+            <a class="invest-together-btn" href="#">Get an offer for other countries</a>
+        </section>
         <!-- invest_together end -->
+        <!-- check-list start -->
+        <section class="check_list_section">
+            <div class="check_list_wrapper">
+                <div class="check_list_bg"></div>
+                <div class="check_list_container">
+                    <h2 class="check_list_title">Get a checklist of investment attractive countries</h2>
+                    <h3 class="check_list_subtitle">Fill out the form and we will send a checklist to your e-mail</h3>
+                    <form class="check_list_form" action="#"><!--data-mage-init='{"Magento_Theme/js/sections/check-list-form":{}}'-->
+                        <label for="check_list_name" class="check_list_form_label">
+                            <input class="check_list_form_input" type="text" autocomplete="off" id="check_list_name" placeholder="Name">
+                        </label>
+                        <label for="check_list_phoneNumber" class="check_list_form_label">
+                            <input class="check_list_form_input" type="number" autocomplete="off" id="check_list_phoneNumber" placeholder="Phone">
+                        </label>
+                        <label for="email" class="check_list_form_label">
+                            <input class="check_list_form_input" type="email" autocomplete="off" id="check_list_email" placeholder="Email">
+                        </label>
+                        <button type="submit" class="check_list_form_submit_btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- check-list end -->
+        <!-- services start -->
+        <section class="services_section">
+            <div class="services_bg"></div>
+            <h3 class="services_title">Services</h3>
+            <p class="services_text">We carry out the selection of real estate, educational programs, employment and migration.</p>
+            <div class="services_content">
+                <div class="services_card">
+                    <h4 class="services_card-title">Employment abroad</h4>
+                    <div class="services_card-info">
+                        <p>The foreign real estate agency VIP Realty Company Ukraine deals with employment in handyman specialties in all European countries. At the individual request of the seeker, the selection of vacancies for highly qualified jobs is carried out with mandatory fulfillment of the employer\'s requirements.</p>
+                        <a href="#">In more detail</a>
+                    </div>
+                </div>
+                <div class="services_card">
+                    <h4 class="services_card-title">Education abroad</h4>
+                    <div class="services_card-info">
+                        <p>Each of our clients, regardless of age and specialty, can choose a study program at a university abroad. We have collected offers for free education in a number of European countries - these are Italy, Greece, Cyprus, Spain, the USA, etc. To receive information on education abroad and to submit documents to universities abroad, leave your contact details and our manager will advise you.</p>
+                        <a href="#">In more detail</a>
+                    </div>
+                </div>
+                <div class="services_card">
+                    <h4 class="services_card-title">Migration, obtaining a residence permit</h4>
+                    <div class="services_card-info">
+                        <p>We provide full legalization in the country where you buy real estate. This is obtaining GNP when buying apartments from the developer, opening a bank account, obtaining a tax number. Our employees provide legal advice and choose the best way to obtain a residence permit, draw up documents for obtaining an investor visa, a digital nomad. We act as a translator, a witness on the deal and offer real estate with full and guaranteed title to the property for non-residents.</p>
+                        <a href="#">In more detail</a>
+                    </div>
+                </div>
+                <div class="services_card">
+                    <h4 class="services_card-title">Issuing a Golden Visa and obtaining citizenship for investors</h4>
+                    <div class="services_card-info">
+                        <p>European citizenship and an investor\'s passport when purchasing assets in Europe in the amount of 250,000 euros or more. Selection of real estate, support in the preparation of a complete package of documents.</p>
+                        <a href="#">In more detail</a>
+                    </div>
+                </div>
+                <div class="services_card">
+                    <h4 class="services_card-title">Consultations on the transfer of funds for the purchase of real estate abroad</h4>
+                    <div class="services_card-info">
+                        <p>Selection of individual options for investing and transferring funds through cryptocurrency, opening accounts in European banks for buying real estate abroad.</p>
+                        <a href="#">In more detail</a>
+                    </div>
+                </div>
+                <div class="services_card">
+                    <h4 class="services_card-title">Development of individual investment strategies with profitability of up to 50% per annum</h4>
+                    <div class="services_card-info">
+                        <p>Formation of package offers for investors and investment pools with special wholesale conditions from developers abroad.</p>
+                        <a href="#">In more detail</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- services end -->
+        <!-- cooperation start -->
+        <section class="cooperation_section">
+            <div class="cooperation_wrapper">
+                <div class="cooperation_bg"></div>
+                <div class="cooperation_container">
+                    <h2 class="cooperation_title">Cooperation</h2>
+                    <p class="cooperation_subtitle">If you represent a real estate agency in Ukraine and would like to cooperate in the sale of real estate abroad, please leave a request. We will provide favorable conditions for working with professional agents.</p>
+                    <form class="cooperation_form" action="#"><!--data-mage-init='{"Magento_Theme/js/sections/cooperation-form":{}}'-->
+                        <label for="cooperation_name" class="cooperation_form_label">
+                            <input class="cooperation_form_input" type="text" autocomplete="off" id="cooperation_name" placeholder="Name">
+                        </label>
+                        <label for="cooperation_phoneNumber" class="cooperation_form_label">
+                            <input class="cooperation_form_input" type="number" autocomplete="off" id="cooperation_phoneNumber" placeholder="Phone">
+                        </label>
+                        <label for="email" class="cooperation_form_label">
+                            <input class="cooperation_form_input" type="email" autocomplete="off" id="cooperation_email" placeholder="Email">
+                        </label>
+                        <button type="submit" class="cooperation_form_submit_btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- cooperation end -->
+        <!-- why-we start -->
+        <section class="why-we_section">
+            <div class="why-we_bg"></div>
+            <h3 class="why-we_title">Why choose us?</h3>
+            <div class="why-we_content">
+                <div class="why-we_item">
+                    <div class="why-we_icon">
+                        <svg width="68" height="68">
+                            <use href="./images/sections/svg/sprite.svg#why-us-1"></use>
+                        </svg>
+                    </div>
+                    <h4>Its employees, offices and partners in all countries of real estate sales</h4>
+                    <p>Own base of primary and secondary real estate objects in more than 20 countries of the world. With remote selection, the client comes to the country of purchase, where he is accompanied by our employee at all stages of the transaction.</p>
+                </div>
+                <div class="why-we_item">
+                    <div class="why-we_icon">
+                        <svg width="68" height="68">
+                            <use href="./images/sections/svg/sprite.svg#why-us-2"></use>
+                        </svg>
+                    </div>
+                    <h4>Remote acquisition of real estate abroad</h4>
+                    <p>It is possible to buy real estate abroad online without coming to the country. We organize online showings, room tours and go on a video call with our partner abroad so that the client can buy an apartment abroad in a remote format.</p>
+                </div>
+                <div class="why-we_item">
+                    <div class="why-we_icon">
+                        <svg width="68" height="68">
+                            <use href="./images/sections/svg/sprite.svg#why-us-3"></use>
+                        </svg>
+                    </div>
+                    <h4>Payment for real estate in cryptocurrency, cash and non-cash settlement</h4>
+                    <p>We facilitate the withdrawal of funds to the client\'s accounts abroad in order to comply with the further procedure for the purchase of real estate. You can find out the optimal method of calculation by consulting with our expert.</p>
+                </div>
+                <div class="why-we_item">
+                    <div class="why-we_icon">
+                        <svg width="68" height="68">
+                            <use href="./images/sections/svg/sprite.svg#why-us-4"></use>
+                        </svg>
+                    </div>
+                    <h4>Customer support in three languages (Ukrainian, Russian, English)</h4>
+                    <p>Specialists in the Ukrainian office of VRC and representative offices abroad speak several languages, so the client does not experience a language barrier.</p>
+                </div>
+                <div class="why-we_item">
+                    <div class="why-we_icon">
+                        <svg width="68" height="68">
+                            <use href="./images/sections/svg/sprite.svg#why-us-5"></use>
+                        </svg>
+                    </div>
+                    <h4>Legal guarantees and security</h4>
+                    <p>All properties and developers are checked by our legal department for security and compliance with the picture. Each client concludes a contract directly with the developer or with an agency in the case of selection of secondary real estate in Europe.</p>
+                </div>
+                <div class="why-we_item">
+                    <div class="why-we_icon">
+                        <svg width="68" height="68">
+                            <use href="./images/sections/svg/sprite.svg#why-us-6"></use>
+                        </svg>
+                    </div>
+                    <h4>Ready-made solutions for real estate investors</h4>
+                    <p>We develop ready-made solutions for real estate investments abroad in growing markets. Each country develops its own investment proposal for a pool of investors or individual purchases.</p>
+                </div>
+                <div class="why-we_item">
+                    <div class="why-we_icon">
+                        <svg width="68" height="68">
+                            <use href="./images/sections/svg/sprite.svg#why-us-7"></use>
+                        </svg>
+                    </div>
+                    <h4>Investment tours to Cyprus, UAE, Phuket, Turkey, Italy and Egypt</h4>
+                    <p>They are held every month so that customers can immerse themselves in the atmosphere of the country, feel the benefits and see with their own eyes the real estate they are buying. Each tour takes place according to an individual program.</p>
+                </div>
+                <div class="why-we_item">
+                    <div class="why-we_icon">
+                        <svg width="68" height="68">
+                            <use href="./images/sections/svg/sprite.svg#why-us-8"></use>
+                        </svg>
+                    </div>
+                    <h4>Individual selection of real estate abroad</h4>
+                    <p>We find exclusive real estate options to meet non-standard customer requests. If you did not see the country you need in the list on the website, leave a request for individual selection.</p>
+                </div>
+            </div>
+        </section>
+        <!-- why-we end -->
+        <!-- deal-process start -->
+        <section class="deal-process_section">
+            <div class="deal-process_bg"></div>
+            <h3 class="deal-process_title">How is the deal made</h3>
+            <ul class="deal-process_list">
+                <li class="deal-process_item">
+                    <h4>01</h4>
+                    <p>Consultation with our manager</p>
+                </li>
+                <li class="deal-process_item">
+                    <h4>02</h4>
+                    <p>We decide on the country of purchase</p>
+                </li>
+                <li class="deal-process_item">
+                    <h4>03</h4>
+                    <p>We select 3-5 options of objects remotely</p>
+                </li>
+                <li class="deal-process_item">
+                    <h4>04</h4>
+                    <p>We will organize a video call with an employee in the country of purchase with a possible online viewing of the property</p>
+                </li>
+                <li class="deal-process_item">
+                    <h4>05</h4>
+                    <p>We advance the object for remote purchase or organize a trip abroad</p>
+                </li>
+                <li class="deal-process_item">
+                    <h4>06</h4>
+                    <p>We inspect real estate and draw up documents</p>
+                </li>
+                <li class="deal-process_item">
+                    <h4>07</h4>
+                    <p>Виходимо на угоду та передаємо нерухомість в управління</p>
+                </li>
+            </ul>
+        </section>
+        <!-- deal-process end -->
+    </main>
+    <footer>
+        <!--footerLogo start -->
+        <div>
+            <a href="#">
+                <img width="120" height="90" src="./images/sections/svg/logo_white.svg" alt="Helios Rental">
+            </a>
+        </div>
+        <!--footerLogo end -->
+        <!--footerContacts start -->
+        <h3 class="footer_contacts-title">Contacts</h3>
 
+        <a class="footer_phone" href="tel:+380668471889">+38 (066) 847 18-89</a>
         
-    </header>
+        <a class="footer_mail" href="mailto:vrcukraine.odessa@gmail.com">helios.rental@gmail.com</a>
+        
+        <ul class="footer_social-network">
+            <li>
+                <a class="footer_contacts-link" href="#">
+                    <img class="footer_contacts-icon" width="22" height="22" src="./images/sections/svg/facebook.svg" alt="Facebook">
+                </a>
+            </li>
+            <li>
+                <a class="footer_contacts-link" href="#">
+                    <img class="footer_contacts-icon" width="22" height="22" src="./images/sections/svg/youtube.svg" alt="YouTube">
+                </a>
+            </li>
+            <li>
+                <a class="footer_contacts-link" href="#">
+                    <img class="footer_contacts-icon" width="22" height="22" src="./images/sections/svg/instagram.svg" alt="Instagram">
+                </a>
+            </li>
+        </ul>
+        <!--footerContacts end -->
+        <!--footerMenu start -->
+        <h3 class="footer_menu-title">Menu</h3>
 
+        <ul>
+            <li>
+                <a class="footer_menu-link" href="#">Real estate</a>
+            </li>
+            <li>
+                <a class="footer_menu-link" href="#">Counties</a>
+            </li>
+            <li>
+                <a class="footer_menu-link" href="#">About Us</a>
+            </li>
+            <li>
+                <a class="footer_menu-link" href="#">Contacts</a>
+            </li>
+            <li>
+                <a class="footer_menu-link" href="#">Blog</a>
+            </li>
+        </ul>
+        <!--footerMenu end -->
+        <!--footerTitle start -->
+        <h3 class="footer_title">VIP Realty Company Helios Rental</h3>
+        <!--footerTitle end -->
+    </footer>
     
     <script type="module" src="./js/main.js"></script>
 </body>
