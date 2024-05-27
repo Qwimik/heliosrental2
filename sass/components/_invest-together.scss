@@ -1,0 +1,164 @@
+    .invest-together_section {
+        margin-bottom: 60px;
+        margin-top: 60px;
+    }
+
+    .invest-together_title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 22px;
+        color: $color-black !important;
+        line-height: 1.5;
+    }
+
+    .invest-together_subtitle {
+        text-transform: uppercase;
+        text-align: center;
+        padding: 3px 5px;
+        color: $color-white;
+        background: $color-red;
+        border-radius: 3px;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    .invest-together-btn {
+        margin: 50px auto 0 auto;
+        background-color: $color-red;
+        color: $color-white !important;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        width: 270px;
+        padding: 14px 2.30px;
+        font-size: 14px;
+        line-height: 1.3;
+        border: 0.10px solid;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        border-radius: 4px;
+        text-overflow: ellipsis;
+        text-align: center;
+        // vertical-align: middle;
+        user-select: none;
+        transition: 0.3s all ease;
+        z-index: 99;
+
+        &:hover {
+            background-color: $color-red-bg;
+            text-decoration: none;
+        }
+    }
+
+    .invest-together-content {
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: 30px;
+        justify-content: center;
+    }
+
+    .invest-together_detail {
+        width: 360px;
+        height: 217px;
+        padding: 20px;
+        border-radius: 5px;
+
+        a {
+            color: $color-white !important;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 1.6;
+        }
+    }
+
+    .invest-together-text {
+        font-size: 15px;
+        color: $color-white !important;
+    }
+
+    .invest-together-price {
+        line-height: 1.1;
+        font-weight: 600;
+        letter-spacing: -.02em;
+        font-size: 18px;
+        padding: 8px 20px;
+        background: $color-red;
+        color: $color-white;
+        border-radius: 4px;
+        width: 80px;
+    }
+
+    .invest-together_location {
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+
+        p {
+            color: $color-white !important;
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+
+    @media only screen and (max-width: $screen__xs) {
+
+        .invest-together-content {
+
+            > :nth-child(1) {
+                // background: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0) 100%),
+                // url('@{baseDir}images/sections/invest-together/mob/georgia-mob.jpeg');
+                background-size: cover;
+            }
+
+            > :nth-child(2) {
+                // background: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0) 100%),
+                // url('@{baseDir}images/sections/invest-together/mob/panama-mob.jpeg');
+                background-size: cover;
+            }
+
+            > :nth-child(3) {
+                // background: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0) 100%),
+                // url('@{baseDir}images/sections/invest-together/mob/royal-palm-mob.jpeg');
+                background-size: cover;
+            }
+        }
+    }
+
+    @media only screen and (min-width: $screen__xs) {
+        .invest-together-content {
+
+            > :nth-child(1) {
+                // background: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0) 100%),
+                // url('@{baseDir}images/sections/invest-together/desk/georgia-desk.jpeg');
+                background-size: cover;
+            }
+
+            > :nth-child(2) {
+                // background: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0) 100%),
+                // url('@{baseDir}images/sections/invest-together/desk/panama-desk.jpeg');
+                background-size: cover;
+            }
+
+            > :nth-child(3) {
+                // background: linear-gradient(180deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0) 100%),
+                // url('@{baseDir}images/sections/invest-together/desk/royal-palm-desk.jpeg');
+                background-size: cover;
+            }
+
+        }
+
+        .invest-together_detail {
+            width: 270px;
+            height: 346px;
+
+            a {
+                display: block;
+                padding-top: 100px;
+            }
+        }
+    }
