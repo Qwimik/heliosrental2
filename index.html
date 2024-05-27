@@ -9,7 +9,583 @@
     <title>Document</title>
 </head>
 <body>
+    <header>
+        <!-- HeaderTop start -->
+        <div class="header content header-top">
+            <a class="header-top__phone-link" href="tel:+380999999999">
+                <img class="header-top__phone-img" src="./images/sections/svg/phone.svg" width="22" height="22" alt="phone">
+                <span class="header-top__phone-text">+38 (099) 999-99-99</span>
+            </a>
+            <ul class="header-top__socials">
+                <li class="header-top__socials__item"><a href="#" aria-label="facebook link"><img width="22" height="22" src="./images/sections/svg/facebook.svg" alt="Facebook"></a></li>
+                <li class="header-top__socials__item"><a href="#"><img width="22" height="22" src="./images/sections/svg/youtube.svg" alt="YouTube"></a></li>
+                <li class="header-top__socials__item"><a href="#"><img width="22" height="22" src="./images/sections/svg/instagram.svg" alt="Instagram"></a></li>
+            </ul>
+        </div>
+        <!-- HeaderTop end -->
+        <!-- HeaderMenuDesktop start -->
+        <div class="menu_desktop">
+            <ul class="menu_desktop_list">
+                <li class="menu_desktop_item">
+                    <a class="menu_desktop_link menu_desktop_link_active" href="./index.html">Home</a>
+                </li>
+                <li class="menu_desktop_item">
+                    <a class="menu_desktop_link" href="#">Estate</a>
+                </li>
+                <li class="menu_desktop_item">
+                    <a class="menu_desktop_link" href="#">About us</a>
+                </li>
+                <li class="menu_desktop_item">
+                    <a class="menu_desktop_link" href="#">Services</a>
+                </li>
+                <li class="menu_desktop_item">
+                    <a class="menu_desktop_link" href="#">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        <!-- HeaderMenuDesktop end -->
+        <!-- HeaderContact start -->
+        <div class="contact_container"> <!--data-mage-init='{"Magento_Theme/js/header/contact":{}}'-->
+            <button class="contact_btn" type="button">Сonsultations</button>
+            <div class="contact_backdrop">
+                <div class="contact_content">
+                    <button type="button" class="contact_close" aria-label="close">
+                        <img class="menu_link_phone-img" src="./images/sections/svg/close.svg" width="22" height="22" alt="close">
+                    </button>
+                    <div class="contact_form_container">
+                        <h4 class="contact_form_title">Fill out the form and we will contact you</h4>
+                        <form class="contact_form" action="#"><!--data-mage-init='{"Magento_Theme/js/header/contact-form":{}}'-->
+                            <label for="name" class="contact_form_label">
+                                <input class="contact_form_input" type="text" autocomplete="off" id="name" placeholder="Name">
+                            </label>
+                            <label for="phoneNumber" class="contact_form_label">
+                                <input class="contact_form_input" type="number" autocomplete="off" id="phoneNumber" placeholder="Phone">
+                            </label>
+                            <label for="email" class="contact_form_label">
+                                <input class="contact_form_input" type="email" autocomplete="off" id="email" placeholder="Email">
+                            </label>
+                            <button type="submit" class="contact_form_submit_btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HeaderContact end -->
+        <!-- HeaderMobileMenu start -->
+        <div class="menu_container"> <!--data-mage-init='{"Magento_Theme/js/header/mobile-menu":{}}'-->
+            <div class="menu_backdrop">
+                <div class="menu_content">
+                    <button type="button" class="menu_close" aria-label="close">
+                        <img class="menu_link_phone-img" src="./images/sections/svg/close.svg" width="22" height="22" alt="close">
+                    </button>
+                    <ul class="menu_list">
+                        <li class="menu_item">
+                            <a class="menu_link menu_link_active" href="#">Home</a>
+                        </li>
+                        <li class="menu_item">
+                            <a class="menu_link" href="#">Estate</a>
+                        </li>
+                        <li class="menu_item">
+                            <a class="menu_link" href="#">About us</a>
+                        </li>
+                        <li class="menu_item">
+                            <a class="menu_link" href="#">Services</a>
+                        </li>
+                        <li class="menu_item">
+                            <a class="menu_link" href="#">Contacts</a>
+                        </li>
+                        <li class="menu_item">
+                            <a class="menu_link menu_link_phone" href="tel:+380999999999">
+                                <img class="menu_link_phone-img" src="./'images/sections/svg/phone-red.svg" width="22" height="22" alt="phone">
+                                <span class="menu_link_phone-text">+38 (099) 999-99-99</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- HeaderMobileMenu end -->
+        <!-- Hero start -->
+        <section id="hero" class="hero_section"><!--data-mage-init='{"Magento_Theme/js/sections/hero":{}}'-->
+            <div class="hero_wrapper">
+                <video autoplay loop muted poster="./images/sections/hero/hero-poster.jpeg">
+                    <source src="./images/sections/hero/hero-video.mp4" type="video/mp4">
+                </video>
+                <div class="hero_content">
+                    <h1 class="hero_title">Helios Rental</h1>
+                    <h2 class="hero_subtitle">Special for you</h2>
+                    <button class="hero_btn" type="button" aria-label="scroll">
+                        <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="22" height="22" fill="#f80707" stroke="#f80707">
+                            <path d="M15.4,9.88,10.81,5.29a1,1,0,0,0-1.41,0,1,1,0,0,0,0,1.42L14,11.29a1,1,0,0,1,0,1.42L9.4,17.29a1,1,0,0,0,1.41,1.42l4.59-4.59A3,3,0,0,0,15.4,9.88Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Hero end -->
+        <!-- countries_slider start -->
+        <div class="countries_slide-content">
+            <div class="countries_slide-bg"></div>
+            <div class="countries_slide-nav">
+                <h2 class="countries_slide-title">Countries we work with</h2>
+                <a class="countries_slide-btn" href="#">View all</a>
+            </div>
+        
+            <div class="countries_slider"><!--data-mage-init='{"Magento_Theme/js/sections/countries_slider":{}}'-->
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Austria</p>
+                        <p class="countries_slide-text--shadow">Austria</p>
+                        <img src="./images/countries-slider/austria.webp" alt="Austria">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Bali</p>
+                        <p class="countries_slide-text--shadow">Bali</p>
+                        <img src="./images/countries-slider/bali.webp" alt="Bali">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Bulgaria</p>
+                        <p class="countries_slide-text--shadow">Bulgaria</p>
+                        <img src="./images/countries-slider/bulgaria.webp" alt="Bulgaria">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Cyprus</p>
+                        <p class="countries_slide-text--shadow">Cyprus</p>
+                        <img src="./images/countries-slider/cyprus.webp" alt="Cyprus">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Czech</p>
+                        <p class="countries_slide-text--shadow">Czech</p>
+                        <img src="./images/countries-slider/czech.webp" alt="Czech">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Egypt</p>
+                        <p class="countries_slide-text--shadow">Egypt</p>
+                        <img src="./images/countries-slider/egypt.webp" alt="Egypt">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Georgia</p>
+                        <p class="countries_slide-text--shadow">Georgia</p>
+                        <img src="./images/countries-slider/georgia.webp" alt="Georgia">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Germany</p>
+                        <p class="countries_slide-text--shadow">Germany</p>
+                        <img src="./images/countries-slider/germany.webp" alt="Germany">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Greece</p>
+                        <p class="countries_slide-text--shadow">Greece</p>
+                        <img src="./images/countries-slider/greece.webp" alt="Greece">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Israel</p>
+                        <p class="countries_slide-text--shadow">Israel</p>
+                        <img src="./images/countries-slider/israel.webp" alt="Israel">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Montenegro</p>
+                        <p class="countries_slide-text--shadow">Montenegro</p>
+                        <img src="./images/countries-slider/montenegro.webp" alt="Montenegro">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Panama</p>
+                        <p class="countries_slide-text--shadow">Panama</p>
+                        <img src="./images/countries-slider/panama.webp" alt="Panama">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Poland</p>
+                        <p class="countries_slide-text--shadow">Poland</p>
+                        <img src="./images/countries-slider/poland.webp" alt="Poland">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Portugal</p>
+                        <p class="countries_slide-text--shadow">Portugal</p>
+                        <img src="./images/countries-slider/portugal.webp" alt="Portugal">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Spain</p>
+                        <p class="countries_slide-text--shadow">Spain</p>
+                        <img src="./images/countries-slider/spain.webp" alt="Spain">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Switzerland</p>
+                        <p class="countries_slide-text--shadow">Switzerland</p>
+                        <img src="./images/countries-slider/switzerland.webp" alt="Switzerland">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Tenerife</p>
+                        <p class="countries_slide-text--shadow">Tenerife</p>
+                        <img src="./images/countries-slider/tenerife.webp" alt="Tenerife">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Thailand</p>
+                        <p class="countries_slide-text--shadow">Thailand</p>
+                        <img src="./images/countries-slider/thailand.webp" alt="Thailand">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Turkey</p>
+                        <p class="countries_slide-text--shadow">Turkey</p>
+                        <img src="./images/countries-slider/turkey.webp" alt="Turkey">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">USA</p>
+                        <p class="countries_slide-text--shadow">USA</p>
+                        <img src="./images/countries-slider/USA.webp" alt="USA">
+                    </a>
+                </div>
+                <div class="countries_slide">
+                    <a class="countries_slide-link" href="#">
+                        <p class="countries_slide-text">Portugal</p>
+                        <p class="countries_slide-text--shadow">Portugal</p>
+                        <img src="./images/countries-slider/portugal.webp" alt="Portugal">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- countries_slider end -->
+        <!-- statistics start -->
+        <section id="statistics" class="statistics_section"><!--data-mage-init='{"Magento_Theme/js/sections/statistics":{}}'-->
+            <div class="statistics_wrapper">
+                <img class="statistics_img" src="./images/sections/statistics/statistics-section.png" alt="Statistics">
+                <h3 class="statistics_title">Real estate agency</h3>
+                <h3 class="statistics_subtitle">Helios Rental</h3>
+                <ul class="statistics_list">
+                    <li class="statistics_item">
+                        <span class="statistics_count">> <span class="statistics_count_inc">2500</span></span>
+                        <span class="statistics_text_accent">clients</span>
+                        <span class="statistics_text">Trust us</span>
+                    </li>
+                    <li class="statistics_item">
+                        <span class="statistics_count"><span class="statistics_count_inc">32</span></span>
+                        <span class="statistics_text_accent">countries</span>
+                        <span class="statistics_text">Maximum coverage by geography of offers</span>
+                    </li>
+                    <li class="statistics_item">
+                        <span class="statistics_count">> <span class="statistics_count_inc">100</span></span>
+                        <span class="statistics_text_accent">employees</span>
+                        <span class="statistics_text">All over the world</span>
+                    </li>
+                    <li class="statistics_item">
+                        <span class="statistics_count">> <span class="statistics_count_inc">500</span>k $</span>
+                        <span class="statistics_text_accent">capital</span>
+                        <span class="statistics_text">Earned money for investors on real estate</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- statistics end -->
+        <!-- current_offers start -->
+        <section id="current-offers" class="current_offers-section">
+            <div class="current_bgc"></div>
+            <h3 class="current_title">Current Offers</h3>
+            <div class="current_content"><!--data-mage-init='{"Magento_Theme/js/sections/current-offers":{}}'-->
+                <div>
+                    <div class="current_img-container">
+                        <a href="#"><img width="360" src="./images/sections/current-offers/thessaloniki.webp" alt="current offer town image">
+                            <p class="current_img-text">50 000$</p>
+                        </a>
+                    </div>
+                    <div class="current_body-container">
+                        <div class="current_location-container">
+                            <img width="16" height="16" src="./images/sections/svg/location.svg" alt="location img">
+                            <p>Greece</p>
+                        </div>
+                        <a class="current_body-title" href="#">Budget apartment in Thessaloniki</a>
+                        <p class="current_body-subtitle">Studio apartment on the fifth floor</p>
+                        <div class="current_body-details">
+                            <div class="current_body-details-info">
+                                <p>Square footage</p>
+                                <h5>30m<sup>2</sup></h5>
+                            </div>
+                            <div class="current_body-details-info">
+                                <p>Year of construction</p>
+                                <h5>2007</h5>
+                            </div>
+                            <div class="current_body-details-info">
+                                <p>Distance to the sea</p>
+                                <h5>900m</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="current_img-container">
+                        <a href="#"><img width="360" src="./images/sections/current-offers/royal-palm.webp" alt="current offer town image">
+                            <p class="current_img-text">165 000$</p>
+                        </a>
+                    </div>
+                    <div class="current_body-container">
+                        <div class="current_location-container">
+                            <img width="16" height="16" src="./images/sections/svg/location.svg" alt="location img">
+                            <p>Panama</p>
+                        </div>
+                        <a class="current_body-title" href="#">Royal Palm Apartments Complex</a>
+                        <p class="current_body-subtitle">With ultra-modern design and architecture</p>
+                        <div class="current_body-details">
+                            <div class="current_body-details-info">
+                                <p>Ocean view</p>
+                                <h5>From all apartments</h5>
+                            </div>
+                            <div class="current_body-details-info">
+                                <p>Year of construction</p>
+                                <h5>2017</h5>
+                            </div>
+                            <div class="current_body-details-info">
+                                <p>Apartments</p>
+                                <h5>From 70m<sup>2</sup></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="current_img-container">
+                        <a href="#"><img width="360" src="./images/sections/current-offers/batumi.jpeg" alt="current offer town image">
+                            <p class="current_img-text">60 000$</p>
+                        </a>
+                    </div>
+                    <div class="current_body-container">
+                        <div class="current_location-container">
+                            <img width="16" height="16" src="./images/sections/svg/location.svg" alt="location img">
+                            <p>Georgia</p>
+                        </div>
+                        <a class="current_body-title" href="#">Wyndham Batumi Wave Complex</a>
+                        <p class="current_body-subtitle">Eco-friendly neighborhood, 150m to the sea</p>
+                        <div class="current_body-details">
+                            <div class="current_body-details-info">
+                                <p>Profit</p>
+                                <h5>5-7%</h5>
+                            </div>
+                            <div class="current_body-details-info">
+                                <p>Year of construction</p>
+                                <h5>2025</h5>
+                            </div>
+                            <div class="current_body-details-info">
+                                <p>Installment plan</p>
+                                <h5>Over 30 months</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="current_img-container">
+                        <a href="#"><img width="360" src="./images/sections/current-offers/bahamas.webp" alt="current offer town image">
+                            <p class="current_img-text">127 000$</p>
+                        </a>
+                    </div>
+                    <div class="current_body-container">
+                        <div class="current_location-container">
+                            <img width="16" height="16" src="./images/sections/svg/location.svg" alt="location img">
+                            <p>Northern Cyprus</p>
+                        </div>
+                        <a class="current_body-title" href="#">Bagami Complex with Mediterranean Sea View</a>
+                        <p class="current_body-subtitle">Complex near Girne (Kyrenia) and the famous Alagadi Beach</p>
+                        <div class="current_body-details">
+                            <div class="current_body-details-info">
+                                <p>First installment</p>
+                                <h5>35%</h5>
+                            </div>
+                            <div class="current_body-details-info">
+                                <p>0% installment</p>
+                                <h5>Over 4 years</h5>
+                            </div>
+                            <div class="current_body-details-info">
+                                <p>Delivery of the complex</p>
+                                <h5>June 2026</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="current_img-container">
+                        <a href="#"><img width="360" src="./images/sections/current-offers/pafos.webp" alt="current offer town image">
+                            <p class="current_img-text">175 000$</p>
+                        </a>
+                    </div>
+                    <div class="current_body-container">
+                        <div class="current_location-container">
+                            <img width="16" height="16" src="./images/sections/svg/location.svg" alt="location img">
+                            <p>Southern Cyprus</p>
+                        </div>
+                        <a class="current_body-title" href="#">1-bedroom apartments in Upper Paphos</a>
+                        <p class="current_body-subtitle">Complex with modern design and luxurious finishes</p>
+                        <div class="current_body-details">
+                            <div class="current_body-details-info">
+                                <p>Covered area</p>
+                                <h5>50m<sup>2</sup></h5>
+                            </div>
+                            <div class="current_body-details-info">
+                                <p>Status</p>
+                                <h5>New construction</h5>
+                            </div>
+                            <div class="current_body-details-info">
+                                <p>Number of rooms</p>
+                                <h5>1</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="current_link-all" href="#">view all offers</a>
+        </section>
+        <!-- current_offers end -->
+        <!-- best_offers start -->
+        <section class="best_offers_section">
+            <div class="best_offers_wrapper">
+                <div class="best_offers_container">
+                    <h2 class="best_offers_title">The most attractive countries for investment</h2>
+                    <div class="best_offers_content">
+                        <ul class="best_offers_list">
+                            <li class="best_offers_item">
+                                <a href="#" class="best_offers_link">
+                                    <img loading="lazy" class="best_offers_link_image" src="./images/countries-slider/UAE.jpeg" alt="UAE">
+                                    <div class="best_offers_link_text_container">
+                                        <p class="best_offers_text">UAE</p>
+                                        <p class="best_offers_text_accent">18 - 25%</p>
+                                        <p class="best_offers_text_hover">UAE</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="best_offers_item">
+                                <a href="#" class="best_offers_link">
+                                    <img loading="lazy" class="best_offers_link_image" src="./images/countries-slider/italy.webp" alt="Italy">
+                                    <div class="best_offers_link_text_container">
+                                        <p class="best_offers_text">Italy</p>
+                                        <p class="best_offers_text_accent">6 - 8%</p>
+                                        <p class="best_offers_text_hover">Italy</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="best_offers_item">
+                                <a href="#" class="best_offers_link">
+                                    <img loading="lazy" class="best_offers_link_image" src="./images/countries-slider/poland.webp" alt="Poland">
+                                    <div class="best_offers_link_text_container">
+                                        <p class="best_offers_text">Poland</p>
+                                        <p class="best_offers_text_accent">15 - 20%</p>
+                                        <p class="best_offers_text_hover">Poland</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="best_offers_item">
+                                <a href="#" class="best_offers_link">
+                                    <img loading="lazy" class="best_offers_link_image" src="./images/countries-slider/cyprus.webp" alt="North Cyprus">
+                                    <div class="best_offers_link_text_container">
+                                        <p class="best_offers_text">North Cyprus</p>
+                                        <p class="best_offers_text_accent">10 - 12%</p>
+                                        <p class="best_offers_text_hover">North Cyprus</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="best_offers_item">
+                                <a href="#" class="best_offers_link">
+                                    <img loading="lazy" class="best_offers_link_image" src="./images/countries-slider/georgia.webp" alt="Georgia">
+                                    <div class="best_offers_link_text_container">
+                                        <p class="best_offers_text">Georgia</p>
+                                        <p class="best_offers_text_accent">8 - 10%</p>
+                                        <p class="best_offers_text_hover">Georgia</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="best_offers_form_container">
+                            <h4 class="best_offers_form_title">Fill out the form and we will contact you</h4>
+                            <form class="best_offers_form" action="#"><!--data-mage-init='{"Magento_Theme/js/sections/best-offers-form":{}}'-->
+                                <label for="best_offers_name" class="best_offers_form_label">
+                                    <input class="best_offers_form_input" type="text" autocomplete="off" id="best_offers_name" placeholder="Name">
+                                </label>
+                                <label for="best_offers_phoneNumber" class="best_offers_form_label">
+                                    <input class="best_offers_form_input" type="number" autocomplete="off" id="best_offers_phoneNumber" placeholder="Phone">
+                                </label>
+                                <label for="email" class="best_offers_form_label">
+                                    <input class="best_offers_form_input" type="email" autocomplete="off" id="best_offers_email" placeholder="Email">
+                                </label>
+                                <button type="submit" class="best_offers_form_submit_btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- best_offers end -->
+        <!-- invest_together start -->
+        <!-- <section class="invest-together_section">
+            <h3 class="invest-together_title"><?= $escaper->escapeHtml(__('We are collecting a pool of investors for the purchase of objects.')) ?></h3>
+            <h3 class="invest-together_subtitle"><?= $escaper->escapeHtml(__('with a discount and profitability from 15% per annum')) ?></h3>
+            <div class="invest-together-content">
+                <div class="invest-together_detail">
+                    <p class="invest-together-text"><?= $escaper->escapeHtml(__('starting price')) ?></p>
+                    <p class="invest-together-price"><?= $escaper->escapeHtml(__('60 000$')) ?></p>
+                    <a href="<?= $escaper->escapeUrl($baseUrl) ?>"><?= $escaper->escapeHtml(__('Complex in Batumi before the start of sales')) ?></a>
+                    <div class="invest-together_location">
+                        <img width="16" height="16" src="<?= $escaper->escapeUrl($this->getViewFileUrl('images/sections/svg/location_white.svg')); ?>" alt="<?= $escaper->escapeHtmlAttr(__('location img')) ?>">
+                        <p><?= $escaper->escapeHtml(__('Georgia')) ?></p>
+                    </div>
+                </div>
+                <div class="invest-together_detail">
+                    <p class="invest-together-text"><?= $escaper->escapeHtml(__('starting price')) ?></p>
+                    <p class="invest-together-price"><?= $escaper->escapeHtml(__('127 000$')) ?></p>
+                    <a href="<?= $escaper->escapeUrl($baseUrl) ?>"><?= $escaper->escapeHtml(__('Villas in pre-sale')) ?></a>
+                    <div class="invest-together_location">
+                        <img width="16" height="16" src="<?= $escaper->escapeUrl($this->getViewFileUrl('images/sections/svg/location_white.svg')); ?>" alt="<?= $escaper->escapeHtmlAttr(__('location img')) ?>">
+                        <p><?= $escaper->escapeHtml(__('Panama')) ?></p>
+                    </div>
+                </div>
+                <div class="invest-together_detail">
+                    <p class="invest-together-text"><?= $escaper->escapeHtml(__('starting price')) ?></p>
+                    <p class="invest-together-price"><?= $escaper->escapeHtml(__('165 000$')) ?></p>
+                    <a href="<?= $escaper->escapeUrl($baseUrl) ?>"><?= $escaper->escapeHtml(__('Ultramodern apartments in Panama')) ?></a>
+                    <div class="invest-together_location">
+                        <img width="16" height="16" src="<?= $escaper->escapeUrl($this->getViewFileUrl('images/sections/svg/location_white.svg')); ?>" alt="<?= $escaper->escapeHtmlAttr(__('location img')) ?>">
+                        <p><?= $escaper->escapeHtml(__('Panama')) ?></p>
+                    </div>
+                </div>
+            </div>
+            <a class="invest-together-btn" href="<?= $escaper->escapeUrl($baseUrl) ?>"><?= $escaper->escapeHtml(__('Get an offer for other countries')) ?></a>
+        </section> -->
+        <!-- invest_together end -->
 
+        
+    </header>
+
+    
     <script type="module" src="./js/main.js"></script>
 </body>
 </html>
