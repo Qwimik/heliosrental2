@@ -1,0 +1,97 @@
+    .statistics {
+        &_section {
+            margin-top: 6rem;
+            margin-bottom: 6rem;
+        }
+
+        &_wrapper {
+            position: relative;
+        }
+
+        &_img {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        &_title {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+
+        &_subtitle {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 3rem;
+            margin-top: 0;
+            margin-bottom: 3rem;
+        }
+
+        &_list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+            gap: 3rem;
+            z-index: 20;
+            margin: 0;
+            padding: 0;
+        }
+
+        &_item {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        &_count {
+            text-align: center;
+            font-size: 2rem;
+            color: $color-red;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        &_text {
+            text-align: center;
+            font-size: 1.4rem;
+            font-weight: 600;
+
+            &_accent {
+                text-align: center;
+                font-size: 1.6rem;
+                color: $color-red;
+                font-weight: 600;
+            }
+        }
+    }
+
+
+    // .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+    .statistics {
+        &_list {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        &_count {
+            font-size: 2.4rem;
+        }
+
+        &_text {
+            font-size: 1.8rem;
+
+            &_accent {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    // }

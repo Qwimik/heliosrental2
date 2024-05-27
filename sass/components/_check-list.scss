@@ -1,0 +1,99 @@
+    .check_list {
+        &_section {
+            position: relative;
+        }
+
+        &_bg {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            right: -100%;
+            height: 100%;
+            z-index: 0;
+            // background: url('@{baseDir}images/sections/check-list/bg-check-list.webp') no-repeat 50% 50%;
+        }
+
+        &_container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            position: relative;
+            z-index: 1;
+            padding: 60px 0;
+        }
+
+        &_title {
+            text-align: center;
+            font-size: 30px;
+            color: $color-white;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        &_subtitle {
+            text-align: center;
+            font-size: 18px;
+            color: $color-white;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        &_form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            &_input {
+                margin: 0;
+                padding: 20px !important;
+                border: none !important;
+                border-bottom: 1px solid $color-white !important;
+                color: $color-white !important;
+                font-size: 16px !important;
+                background-color: transparent !important;
+
+                &:focus {
+                    box-shadow: none !important;
+                }
+
+                &::placeholder {
+                    color: $color-white !important;
+                }
+            }
+
+            &_submit_btn {
+                margin-top: 30px;
+                padding: 20px;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 20px;
+                color: $color-white;
+                background-color: $color-red;
+                width: 200px;
+                transition: background-color 0.3s ease-out, color 0.3s ease-out;
+
+                &:hover,
+                &:focus {
+                    border: none;
+                    color: $color-white;
+                    background-color: $color-red-bg;
+                }
+            }
+        }
+    }
+
+
+    @media only screen and (min-width: $screen__l) {
+        .check_list {
+            &_container {
+                padding: 80px 0;
+            }
+
+            &_form {
+                flex-direction: row;
+                justify-content: center;
+                gap: 30px;
+            }
+        }
+    }
