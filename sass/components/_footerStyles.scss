@@ -1,5 +1,4 @@
-.page-footer {
-    margin: 0;
+.footer {
     background-color: $color-bg-dark;
 
     ul {
@@ -9,52 +8,49 @@
     }
 }
 
+.footer_container {
+    padding-top: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+    display: flex;
+    gap: 45px;
+    margin: 0 auto;
+    max-width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: normal;
+}
+
 .footer_title,
 .footer_menu-title,
 .footer_contacts-title {
     text-transform: uppercase;
-}
-
-
-
-.footer_content {
-    a {
-        color: $color-white;
-    }
-
-    margin: 0 auto;
-    display: flex;
-    gap: 45px;
     color: $color-white;
-    padding: 50px 15px 35px;
+    padding-bottom: 15px;
 }
 
-.footer_logo,
-.footer_menu,
+.footer_copyright {
+    color: $color-white;
+}
+
+.footer_menu-list,
 .footer_contacts {
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
-.footer_phone {
-    padding: 10px 0 10px 0;
-}
-
+.footer_menu-link,
+.footer_phone,
 .footer_mail {
-    padding-bottom: 20px;
-}
-
-.copyright {
-    background-color: transparent;
-    text-align: left;
-    padding: 0;
+    color: $color-white !important;
 }
 
 .footer_social-network {
     display: flex;
     flex-direction: row;
     gap: 15px;
-    list-style: none;
 }
 
 
@@ -72,17 +68,9 @@
     text-decoration: underline;
 }
 
-@media only screen and (max-width: $screen__s) {
-    .footer_content {
-        max-width: 100%;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: normal;
-    }
-}
 
 @media only screen and (min-width: $screen__s) and (max-width: $screen__m) {
-    .footer_content {
+    .footer_container {
         max-width: 510px;
         flex-direction: row;
         flex-wrap: wrap;
@@ -92,15 +80,17 @@
 }
 
 @media only screen and (min-width: $screen__m) {
-    .footer_content {
+    .footer_container {
         max-width: 720px;
         justify-content: space-between;
-
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 }
 
 @media only screen and (min-width: $screen__l) {
-    .footer_content {
+    .footer_container {
         max-width: 1200px;
+        flex-direction: row;
     }
 }
