@@ -1,0 +1,22 @@
+.container {
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 100%;
+    
+    @media (min-width: $screen__xs) {
+        max-width: 480px;
+    }
+
+    @media (min-width: $screen__m) {
+        padding: 0 15px;
+        max-width: 768px;
+    }
+
+    @media (min-width: $screen__l) {
+        max-width: 1024px;
+    }
+
+    @media (min-width: $screen__xl) {
+        max-width: 1440px;
+    }
+}

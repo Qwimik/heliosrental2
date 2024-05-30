@@ -11,113 +11,123 @@
 </head>
 
 <body>
-    <header>
-        <!-- HeaderTop start -->
-        <div class="header content header-top">
-            <a class="header-top__phone-link" href="tel:+380999999999">
-                <img class="header-top__phone-img" src="./images/sections/svg/phone.svg" width="22" height="22"
-                    alt="phone">
-                <span class="header-top__phone-text">+38 (099) 999-99-99</span>
-            </a>
-            <ul class="header-top__socials">
-                <li class="header-top__socials__item"><a href="#" aria-label="facebook link"><img width="22" height="22"
-                            src="./images/sections/svg/facebook.svg" alt="Facebook"></a></li>
-                <li class="header-top__socials__item"><a href="#"><img width="22" height="22"
-                            src="./images/sections/svg/youtube.svg" alt="YouTube"></a></li>
-                <li class="header-top__socials__item"><a href="#"><img width="22" height="22"
-                            src="./images/sections/svg/instagram.svg" alt="Instagram"></a></li>
-            </ul>
-        </div>
-        <!-- HeaderTop end -->
-        <!-- HeaderMenuDesktop start -->
-        <div class="menu_desktop">
-            <ul class="menu_desktop_list">
-                <li class="menu_desktop_item">
-                    <a class="menu_desktop_link menu_desktop_link_active" href="./index.html">Home</a>
-                </li>
-                <li class="menu_desktop_item">
-                    <a class="menu_desktop_link" href="#">Estate</a>
-                </li>
-                <li class="menu_desktop_item">
-                    <a class="menu_desktop_link" href="#">About us</a>
-                </li>
-                <li class="menu_desktop_item">
-                    <a class="menu_desktop_link" href="#">Services</a>
-                </li>
-                <li class="menu_desktop_item">
-                    <a class="menu_desktop_link" href="#">Contacts</a>
-                </li>
-            </ul>
-        </div>
-        <!-- HeaderMenuDesktop end -->
-        <!-- HeaderContact start -->
-        <div class="contact_container"> <!--data-mage-init='{"Magento_Theme/js/header/contact":{}}'-->
-            <button class="contact_btn" type="button">Сonsultations</button>
-            <div class="contact_backdrop">
-                <div class="contact_content">
-                    <button type="button" class="contact_close" aria-label="close">
-                        <img class="menu_link_phone-img" src="./images/sections/svg/close.svg" width="22" height="22"
-                            alt="close">
-                    </button>
-                    <div class="contact_form_container">
-                        <h4 class="contact_form_title">Fill out the form and we will contact you</h4>
-                        <form class="contact_form" action="#">
-                            <!--data-mage-init='{"Magento_Theme/js/header/contact-form":{}}'-->
-                            <label for="name" class="contact_form_label">
-                                <input class="contact_form_input" type="text" autocomplete="off" id="name"
-                                    placeholder="Name">
-                            </label>
-                            <label for="phoneNumber" class="contact_form_label">
-                                <input class="contact_form_input" type="number" autocomplete="off" id="phoneNumber"
-                                    placeholder="Phone">
-                            </label>
-                            <label for="email" class="contact_form_label">
-                                <input class="contact_form_input" type="email" autocomplete="off" id="email"
-                                    placeholder="Email">
-                            </label>
-                            <button type="submit" class="contact_form_submit_btn">Submit</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- HeaderContact end -->
-        <!-- HeaderMobileMenu start -->
-        <div class="menu_container"> <!--data-mage-init='{"Magento_Theme/js/header/mobile-menu":{}}'-->
-            <div class="menu_backdrop">
-                <div class="menu_content">
-                    <button type="button" class="menu_close" aria-label="close">
-                        <img class="menu_link_phone-img" src="./images/sections/svg/close.svg" width="22" height="22"
-                            alt="close">
-                    </button>
-                    <ul class="menu_list">
-                        <li class="menu_item">
-                            <a class="menu_link menu_link_active" href="#">Home</a>
+    <header class="page-header">
+
+        <div class="wrapper">
+            <div class="container">
+                <div class="header content header-top">
+                    <a class="header-top__phone-link" href="tel:+380999999999">
+                        <img class="header-top__phone-img" src="./images/sections/svg/phone.svg" width="22" height="22"
+                             alt="phone">
+                        <span class="header-top__phone-text">+38 (099) 999-99-99</span>
+                    </a>
+                    <ul class="header-top__socials">
+                        <li class="header-top__socials__item">
+                            <a href="#" class="header-top__socials__link" aria-label="facebook link">
+                                <span class="header-top__socials__icon header-top__socials__icon_facebook"></span>
+                            </a>
                         </li>
-                        <li class="menu_item">
-                            <a class="menu_link" href="#">Estate</a>
+                        <li class="header-top__socials__item">
+                            <a href="#" class="header-top__socials__link" aria-label="youtube link">
+                                <span class="header-top__socials__icon header-top__socials__icon_youtube"></span>
+                            </a>
                         </li>
-                        <li class="menu_item">
-                            <a class="menu_link" href="#">About us</a>
-                        </li>
-                        <li class="menu_item">
-                            <a class="menu_link" href="#">Services</a>
-                        </li>
-                        <li class="menu_item">
-                            <a class="menu_link" href="#">Contacts</a>
-                        </li>
-                        <li class="menu_item">
-                            <a class="menu_link menu_link_phone" href="tel:+380999999999">
-                                <img class="menu_link_phone-img" src="./'images/sections/svg/phone-red.svg" width="22"
-                                    height="22" alt="phone">
-                                <span class="menu_link_phone-text">+38 (099) 999-99-99</span>
+                        <li class="header-top__socials__item">
+                            <a href="#" class="header-top__socials__link" aria-label="instagram link">
+                                <span class="header-top__socials__icon header-top__socials__icon_instagram"></span>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <!-- HeaderMobileMenu end -->
+
+        <div class="wrapper_menu_desktop">
+            <div class="container">
+                <div class="menu_desktop">
+                    <button id="burger-btn" class="burger-btn">&#9776;</button>
+                    <div id="menu" class="menu">
+                        <a href="#" class="menu_mobile_logo" title="Helios Rental">
+                            <img width="70"  src="./images/sections/svg/logo_black.svg" alt="Helios Rental">
+                        </a>
+                        <button id="close-btn" class="menu_mobile_close_btn" aria-label="close menu button"></button>
+                        <nav class="menu-nav">
+                            <ul>
+                                <li>
+                                    <a class="menu-nav_active" href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#">Estate</a>
+                                </li>
+                                <li>
+                                    <a href="#">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contacts</a>
+                                </li>
+                                <li class="menu_mobile_item_tel">
+                                    <a class="menu_mobile_link" href="tel:+380999999999">
+                                        <span class="menu_mobile_icon"></span>
+                                        <span class="menu_mobile_link_phone-text">+38 (099) 999-99-99</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="overlay" class="overlay"></div>
+                    <a href="#" class="menu_desktop_logo" title="Helios Rental">
+                        <img width="70"  src="./images/sections/svg/logo_black.svg" alt="Helios Rental">
+                    </a>
+                    <ul class="menu_desktop_list">
+                        <li class="menu_desktop_item">
+                            <a class="menu_desktop_link menu_desktop_link_active" href="./index.html">Home</a>
+                        </li>
+                        <li class="menu_desktop_item">
+                            <a class="menu_desktop_link" href="#">Estate</a>
+                        </li>
+                        <li class="menu_desktop_item">
+                            <a class="menu_desktop_link" href="#">About us</a>
+                        </li>
+                        <li class="menu_desktop_item">
+                            <a class="menu_desktop_link" href="#">Services</a>
+                        </li>
+                        <li class="menu_desktop_item">
+                            <a class="menu_desktop_link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <button class="contact_btn" type="button">Consultation</button>
+                    <div class="contact_container">
+                        <div class="contact_content">
+                            <button type="button" class="contact_close" aria-label="close">
+                                <span class="contact_close_btn"></span>
+                            </button>
+                            <div class="contact_form_container">
+                                <h4 class="contact_form_title">Fill out the form and we will contact you</h4>
+                                <form class="contact_form" action="#">
+                                    <!--data-mage-init='{"Magento_Theme/js/header/contact-form":{}}'-->
+                                    <label for="name" class="contact_form_label">
+                                        <input class="contact_form_input" type="text" autocomplete="off" id="name"
+                                                placeholder="Name">
+                                    </label>
+                                    <label for="phoneNumber" class="contact_form_label">
+                                        <input class="contact_form_input" type="number" autocomplete="off" id="phoneNumber"
+                                                placeholder="Phone">
+                                    </label>
+                                    <label for="email" class="contact_form_label">
+                                        <input class="contact_form_input" type="email" autocomplete="off" id="email"
+                                                placeholder="Email">
+                                    </label>
+                                    <button type="submit" class="contact_form_submit_btn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
         <!-- Hero start -->
