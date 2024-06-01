@@ -5,19 +5,29 @@
       swiper = new Swiper('.current_content', {
         pagination: {
             el: '.swiper-pagination',
-        },
-          slidesPerView: 1,
+            clickable: true,
+          },
+          
+        keyboard: {
+            enabled: true,
+            onlyInViewport: false,
+          },
+        
+        slidesPerView: 1,
 
         autoplay: {
           delay: 4000,
-        },
-        loop: true,
+          },
+        
+          loop: true,
+        
         breakpoints: {
           768: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-        },
+          },
+        
       });
     }
   };
