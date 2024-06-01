@@ -1,26 +1,20 @@
-// document.addEventListener('DOMContentLoaded', () => {
   let swiper = null;
 
   const initSwiper = () => {
     if (window.innerWidth <= 1239 && !swiper) {
       swiper = new Swiper('.current_content', {
-        // navigation: {
-        //   nextEl: '.swiper-button-next',
-        //   prevEl: '.swiper-button-prev',
-        // },
-        // centeredSlides: true,
-        slidesPerView: 1,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+          slidesPerView: 1,
+
         autoplay: {
           delay: 4000,
         },
         loop: true,
         breakpoints: {
-          650: {
+          768: {
             slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          980: {
-            slidesPerView: 3,
             spaceBetween: 20,
           },
         },
@@ -39,4 +33,3 @@
 
   initSwiper();
   window.addEventListener('resize', checkSwiper);
-// });
