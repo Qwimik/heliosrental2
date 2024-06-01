@@ -645,25 +645,29 @@
         <section class="check_list_section">
             <div class="check_list_wrapper">
                 <div class="check_list_bg"></div>
-                <div class="check_list_container">
-                    <h2 class="check_list_title">Get a checklist of investment attractive countries</h2>
-                    <h3 class="check_list_subtitle">Fill out the form and we will send a checklist to your e-mail</h3>
-                    <form class="check_list_form" action="#">
-                        <!--data-mage-init='{"Magento_Theme/js/sections/check-list-form":{}}'-->
-                        <label for="check_list_name" class="check_list_form_label">
-                            <input class="check_list_form_input" type="text" autocomplete="off" id="check_list_name"
-                                placeholder="Name">
-                        </label>
-                        <label for="check_list_phoneNumber" class="check_list_form_label">
-                            <input class="check_list_form_input" type="number" autocomplete="off"
-                                id="check_list_phoneNumber" placeholder="Phone">
-                        </label>
-                        <label for="email" class="check_list_form_label">
-                            <input class="check_list_form_input" type="email" autocomplete="off" id="check_list_email"
-                                placeholder="Email">
-                        </label>
-                        <button type="submit" class="check_list_form_submit_btn">Submit</button>
-                    </form>
+                <div class="container">
+                    <div class="check_list_container">
+                        <h2 class="check_list_title">Get a checklist of investment attractive countries</h2>
+                        <h3 class="check_list_subtitle">Fill out the form and we will send a checklist to your e-mail</h3>
+                        <form class="check_list_form" action="#">
+                            <label for="check_list_name" class="check_list_form_label">
+                                <input class="check_list_form_input" type="text" autocomplete="off" id="nameCheckList"
+                                    placeholder="Name">
+                                <span class="check_list_form_input_icon check_list_form_input_icon_name"></span>
+                            </label>
+                            <label for="check_list_phoneNumber" class="check_list_form_label">
+                                <input class="check_list_form_input" type="number" autocomplete="off"
+                                    id="phoneNumberCheckList" placeholder="Phone">
+                                <span class="check_list_form_input_icon check_list_form_input_icon_phone"></span>
+                            </label>
+                            <label for="email" class="check_list_form_label">
+                                <input class="check_list_form_input" type="email" autocomplete="off" id="emailCheckList"
+                                    placeholder="Email">
+                                <span class="check_list_form_input_icon check_list_form_input_icon_email"></span>
+                            </label>
+                            <button type="submit" class="check_list_form_submit_btn">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
@@ -738,35 +742,6 @@
             </div>
         </section>
         <!-- services end -->
-        <!-- cooperation start -->
-        <section class="cooperation_section">
-            <div class="cooperation_wrapper">
-                <div class="cooperation_bg"></div>
-                <div class="cooperation_container">
-                    <h2 class="cooperation_title">Cooperation</h2>
-                    <p class="cooperation_subtitle">If you represent a real estate agency in Ukraine and would like to
-                        cooperate in the sale of real estate abroad, please leave a request. We will provide favorable
-                        conditions for working with professional agents.</p>
-                    <form class="cooperation_form" action="#">
-                        <!--data-mage-init='{"Magento_Theme/js/sections/cooperation-form":{}}'-->
-                        <label for="cooperation_name" class="cooperation_form_label">
-                            <input class="cooperation_form_input" type="text" autocomplete="off" id="cooperation_name"
-                                placeholder="Name">
-                        </label>
-                        <label for="cooperation_phoneNumber" class="cooperation_form_label">
-                            <input class="cooperation_form_input" type="number" autocomplete="off"
-                                id="cooperation_phoneNumber" placeholder="Phone">
-                        </label>
-                        <label for="email" class="cooperation_form_label">
-                            <input class="cooperation_form_input" type="email" autocomplete="off" id="cooperation_email"
-                                placeholder="Email">
-                        </label>
-                        <button type="submit" class="cooperation_form_submit_btn">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <!-- cooperation end -->
         <!-- why-we start -->
         <section class="why-we_section">
             <div class="why-we_bg"></div>
@@ -898,6 +873,39 @@
             </ul>
         </section>
         <!-- deal-process end -->
+        <!-- cooperation start -->
+        <section class="cooperation_section">
+            <div class="cooperation_wrapper">
+                <div class="cooperation_bg"></div>
+                <div class="container">
+                    <div class="cooperation_container">
+                        <h2 class="cooperation_title">Cooperation</h2>
+                        <p class="cooperation_subtitle">If you represent a real estate agency in Ukraine and would like to
+                            cooperate in the sale of real estate abroad, please leave a request. We will provide favorable
+                            conditions for working with professional agents.</p>
+                        <form class="cooperation_form" action="#">
+                            <label for="cooperation_name" class="cooperation_form_label">
+                                <input class="cooperation_form_input" type="text" autocomplete="off" id="cooperation_name"
+                                    placeholder="Name">
+                                <span class="check_list_form_input_icon check_list_form_input_icon_name"></span>
+                            </label>
+                            <label for="cooperation_phoneNumber" class="cooperation_form_label">
+                                <input class="cooperation_form_input" type="number" autocomplete="off"
+                                    id="cooperation_phoneNumber" placeholder="Phone">
+                                <span class="check_list_form_input_icon check_list_form_input_icon_phone"></span>
+                            </label>
+                            <label for="email" class="cooperation_form_label">
+                                <input class="cooperation_form_input" type="email" autocomplete="off" id="cooperation_email"
+                                    placeholder="Email">
+                                <span class="check_list_form_input_icon check_list_form_input_icon_email"></span>
+                            </label>
+                            <button type="submit" class="cooperation_form_submit_btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- cooperation end -->
     </main>
     <footer class="footer">
         <div class="footer_container">

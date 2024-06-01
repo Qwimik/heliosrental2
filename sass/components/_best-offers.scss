@@ -1,6 +1,6 @@
 .best_offers {
     &_section {
-        padding: 50px 0;
+        padding: 50px 0 0 0;
     }
 
     &_title {
@@ -145,6 +145,7 @@
             transition: background-color 0.3s ease-out;
             color: $color-white;
             border-radius: 4px;
+            text-transform: uppercase;
 
             &:hover {
                 background-color: $color-red-bg;
@@ -157,8 +158,18 @@
 
 @media only screen and (min-width: $screen__m) {
     .best_offers {
+        &_section {
+            padding: 100px 0 50px 0;
+        }
         &_list {
             grid-template-columns: repeat(2, 1fr);
+        }
+        &_form {
+            max-width: 300px;
+            margin: 0 auto;
+            &_title {
+                font-size: 21px;
+            }
         }
     }
 }
