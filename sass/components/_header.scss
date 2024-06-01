@@ -313,5 +313,75 @@ header {
             background-color: $color-red-bg;
         }
     }
-    
+    &_content {
+        padding: 40px 20px;
+    }
+    &_form_title {
+        text-align: center;
+        font-size: 19px;
+        text-transform: uppercase;
+        line-height: 1.3;
+        margin-bottom: 40px;
+    }
+    &_form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        &_label {
+            position: relative;
+        }
+
+        &_input {
+            border: none;
+            border-bottom: 1px solid $color-bg-dark;
+            padding: 5px 5px 5px 30px;
+            width: 100%;
+
+            &:focus, &:active {
+                outline: none;
+            }
+
+
+            &_icon {
+                display: block;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 50%;
+                left: 5px;
+                transform: translateY(-50%);
+
+                &_name {
+                    mask: url('../images/sections/svg/user.svg') no-repeat center / contain;
+                    background-color: #999;
+                }
+                &_phone {
+                    mask: url('../images/sections/svg/form-phone.svg') no-repeat center / contain;
+                    background-color: #999;
+                }
+                &_email {
+                    mask: url('../images/sections/svg/form-email.svg') no-repeat center / contain;
+                    background-color: #999;
+                }
+            }
+        }
+        &_submit_btn {
+            padding: 15px 30px;
+            margin-top: 40px;
+            width: 100%;
+            background-color: $color-red;
+            transition: background-color 0.3s ease-out;
+            color: $color-white;
+            border-radius: 4px;
+
+            &:hover {
+                background-color: $color-red-bg;
+            }
+        }
+    }
+}
+input[type=number] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+    margin: 0;
 }
