@@ -2,19 +2,22 @@ body,
 html {
     overflow-x: hidden;
 }
+
 header {
     .wrapper {
         background-color: $color-bg-dark;
     }
+
     .wrapper_menu_desktop {
         background-color: #ffffffcc;
         transition: background-color 0.5s ease-out;
 
         &:hover {
-            background-color: #ffffff;
+            background-color: $color-white;
         }
     }
 }
+
 .page-header {
     position: fixed;
     top: 0;
@@ -70,7 +73,7 @@ header {
                 content: '';
                 width: 150%;
                 height: 150%;
-                background: #fff;
+                background: $color-white;
                 border-radius: 50%;
                 position: absolute;
                 top: 50%;
@@ -79,6 +82,7 @@ header {
                 transition: transform 0.2s ease-out;
                 z-index: 20;
             }
+
             &:hover::before {
                 transform: translate(-50%, -50%) scale(1);
             }
@@ -95,16 +99,18 @@ header {
             width: 22px;
             height: 22px;
             transition: color 0.4s ease-out;
-            color: #fff;
+            color: $color-white;
 
             &_facebook {
                 mask: url('../images/sections/svg/facebook.svg') no-repeat center / contain;
                 background-color: currentColor;
             }
+
             &_youtube {
                 mask: url('../images/sections/svg/youtube.svg') no-repeat center / contain;
                 background-color: currentColor;
             }
+
             &_instagram {
                 mask: url('../images/sections/svg/instagram.svg') no-repeat center / contain;
                 background-color: currentColor;
@@ -162,20 +168,24 @@ header {
 
             &_active {
                 color: $color-red;
+
                 &::after {
                     transform: scale(1);
                 }
             }
         }
+
         @media screen and (max-width: 1024px) {
             &_list {
                 display: none;
             }
+
             &_logo {
                 margin-left: 50px;
                 margin-right: auto;
             }
         }
+
         @media screen and (max-width: 425px) {
             &_logo {
                 margin-left: 20px;
@@ -192,6 +202,7 @@ header {
     color: $color-bg-dark;
     cursor: pointer;
 }
+
 @media screen and (min-width: 1023px) {
     .burger-btn {
         display: none;
@@ -204,15 +215,17 @@ header {
     left: -300px;
     width: 280px;
     height: 100%;
-    background: white;
+    background: $color-white;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
     transition: left 0.3s ease-out;
     z-index: 100;
     color: #333;
+
     &_mobile_logo {
         display: inline-block;
         margin: 20px;
     }
+
     &_mobile_close_btn {
         position: absolute;
         top: 20px;
@@ -222,6 +235,7 @@ header {
         mask: url('../images/sections/svg/close.svg') no-repeat center / contain;
         background-color: $color-bg-dark;
     }
+
     &_mobile_link {
         position: absolute;
         bottom: 20px;
@@ -234,6 +248,7 @@ header {
             font-weight: 600;
         }
     }
+
     &_mobile_icon {
         width: 20px;
         height: 20px;
@@ -265,15 +280,15 @@ header {
     left: 0;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    opacity: 0; 
-    pointer-events: none; 
+    opacity: 0;
+    pointer-events: none;
     transition: opacity 0.3s ease-out;
     z-index: 90;
 }
 
 .overlay.show {
-    opacity: 1; 
-    pointer-events: auto; 
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .contact {
@@ -283,12 +298,13 @@ header {
         right: -300px;
         width: 280px;
         height: 100%;
-        background: white;
+        background: $color-white;
         box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
         transition: right 0.3s ease-out;
         z-index: 100;
         color: #333;
     }
+
     &_close_btn {
         display: block;
         width: 20px;
@@ -313,9 +329,11 @@ header {
             background-color: $color-red-bg;
         }
     }
+
     &_content {
         padding: 40px 20px;
     }
+
     &_form_title {
         text-align: center;
         font-size: 19px;
@@ -323,10 +341,12 @@ header {
         line-height: 1.3;
         margin-bottom: 40px;
     }
+
     &_form {
         display: flex;
         flex-direction: column;
         gap: 15px;
+
         &_label {
             position: relative;
         }
@@ -337,7 +357,8 @@ header {
             padding: 5px 5px 5px 30px;
             width: 100%;
 
-            &:focus, &:active {
+            &:focus,
+            &:active {
                 outline: none;
             }
 
@@ -355,16 +376,19 @@ header {
                     mask: url('../images/sections/svg/user.svg') no-repeat center / contain;
                     background-color: #999;
                 }
+
                 &_phone {
                     mask: url('../images/sections/svg/form-phone.svg') no-repeat center / contain;
                     background-color: #999;
                 }
+
                 &_email {
                     mask: url('../images/sections/svg/form-email.svg') no-repeat center / contain;
                     background-color: #999;
                 }
             }
         }
+
         &_submit_btn {
             padding: 15px 30px;
             margin-top: 40px;
@@ -380,6 +404,7 @@ header {
         }
     }
 }
+
 input[type=number] {
     -moz-appearance: textfield;
     -webkit-appearance: none;
