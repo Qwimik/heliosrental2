@@ -23,6 +23,12 @@
     color: $color-dark-border;
 }
 
+@media screen and (max-width: $screen__xs) {
+    .reviews_text {
+        font-size: 12px;
+    }
+}
+
 .reviews_text-name {
     position: relative;
     display: block;
@@ -45,6 +51,7 @@
     padding-top: 20px;
     display: flex;
     gap: 20px;
+    margin: 0 auto;
 }
 
 .reviews_text-icon {
