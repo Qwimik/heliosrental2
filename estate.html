@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <title>Estate</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="wrapper">
+            <div class="container">
+                <div class="header content header-top">
+                    <a class="header-top__phone-link" href="tel:+380999999999">
+                        <img class="header-top__phone-img" src="./images/sections/svg/phone.svg" width="22" height="22"
+                            alt="phone">
+                        <span class="header-top__phone-text">+38 (099) 999-99-99</span>
+                    </a>
+                    <ul class="header-top__socials">
+                        <li class="header-top__socials__item">
+                            <a href="#" class="header-top__socials__link" aria-label="facebook link">
+                                <span class="header-top__socials__icon header-top__socials__icon_facebook"></span>
+                            </a>
+                        </li>
+                        <li class="header-top__socials__item">
+                            <a href="#" class="header-top__socials__link" aria-label="youtube link">
+                                <span class="header-top__socials__icon header-top__socials__icon_youtube"></span>
+                            </a>
+                        </li>
+                        <li class="header-top__socials__item">
+                            <a href="#" class="header-top__socials__link" aria-label="instagram link">
+                                <span class="header-top__socials__icon header-top__socials__icon_instagram"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper_menu_desktop">
+            <div class="container">
+                <div class="menu_desktop">
+                    <button id="burger-btn" class="burger-btn">&#9776;</button>
+                    <div id="menu" class="menu">
+                        <a href="#" class="menu_mobile_logo" title="Helios Rental">
+                            <img width="70" src="./images/sections/svg/logo_black.svg" alt="Helios Rental">
+                        </a>
+                        <button id="close-btn" class="menu_mobile_close_btn" aria-label="close menu button"></button>
+                        <nav class="menu-nav">
+                            <ul>
+                                <li>
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a class="menu-nav_active" href="./estate.html">Estate</a>
+                                </li>
+                                <li>
+                                    <a href="./aboutus.html">About us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contacts</a>
+                                </li>
+                                <li class="menu_mobile_item_tel">
+                                    <a class="menu_mobile_link" href="tel:+380999999999">
+                                        <span class="menu_mobile_icon"></span>
+                                        <span class="menu_mobile_link_phone-text">+38 (099) 999-99-99</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="overlay" class="overlay"></div>
+                    <a href="#" class="menu_desktop_logo" title="Helios Rental">
+                        <img width="70" src="./images/sections/svg/logo_black.svg" alt="Helios Rental">
+                    </a>
+                    <ul class="menu_desktop_list">
+                        <li class="menu_desktop_item">
+                            <a class="menu_desktop_link" href="./index.html">Home</a>
+                        </li>
+                        <li class="menu_desktop_item">
+                            <a class="menu_desktop_link menu_desktop_link_active" href="./estate.html">Estate</a>
+                        </li>
+                        <li class="menu_desktop_item">
+                            <a class="menu_desktop_link " href="./aboutus.html">About us</a>
+                        </li>
+                        <li class="menu_desktop_item">
+                            <a class="menu_desktop_link" href="#">Services</a>
+                        </li>
+                        <li class="menu_desktop_item">
+                            <a class="menu_desktop_link" href="#">Contacts</a>
+                        </li>
+                    </ul>
+                    <button class="contact_btn" type="button">Consultation</button>
+                    <div class="contact_container">
+                        <button type="button" class="contact_close" aria-label="close"><span
+                                class="contact_close_btn"></span></button>
+                        <div class="contact_content">
+                            <h4 class="contact_form_title">Fill out the form and we will contact you</h4>
+                            <form class="contact_form" action="#">
+                                <label for="name" class="contact_form_label">
+                                    <input class="contact_form_input" type="text" autocomplete="off" id="name"
+                                        placeholder="Name">
+                                    <span class="contact_form_input_icon contact_form_input_icon_name"></span>
+                                </label>
+                                <label for="phoneNumber" class="contact_form_label">
+                                    <input class="contact_form_input" type="text" autocomplete="off" id="phoneNumber"
+                                        placeholder="Phone">
+                                    <span class="contact_form_input_icon contact_form_input_icon_phone"></span>
+                                </label>
+                                <label for="email" class="contact_form_label">
+                                    <input class="contact_form_input" type="email" autocomplete="off" id="email"
+                                        placeholder="Email">
+                                    <span class="contact_form_input_icon contact_form_input_icon_email"></span>
+                                </label>
+                                <button type="submit" class="contact_form_submit_btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero_pages_section">
+            <div class="hero_pages_wrapper_estate">
+                <div class="container">
+                    <div class="hero_pages_content">
+                        <div class="hero_pages_icon"></div>
+                        <h1 class="hero_pages_title">Estate</h1>
+                        <h2 class="hero_pages_subtitle">All foreign real estate offers from the Vip Reality Club Ukraine
+                            agency</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="current-offers" class="current_offers-section">
+            <div class="current_bgc"></div>
+            <div class="container">
+                <div class="current_content">
+                    <div class="current_wrapper_estate">
+                        <div class="current-container">
+                            <div class="current_img-container">
+                                <a href="#"><img width="360" height="244" src="./images/pages/estate/poland-estate.webp"
+                                        alt="current offer town image">
+                                    <p class="current_img-text">153 000$</p>
+                                </a>
+                            </div>
+                            <div class="current_body-container">
+                                <div class="current_location-container">
+                                    <img width="16" height="16" src="./images/sections/svg/location.svg"
+                                        alt="location img">
+                                    <p>Poland</p>
+                                </div>
+                                <a class="current_body-title" href="#">2+1 apartment in Poland</a>
+                                <p class="current_body-subtitle">KOH PHAI House, layout L2
+                                    View of the infrastructure of the complex.</p>
+                                <div class="current_body-details">
+                                    <div class="current_body-details-info">
+                                        <p>Income from resale</p>
+                                        <h5>from 30% in 3 years</h5>
+                                    </div>
+                                    <div class="current_body-details-info">
+                                        <p>Actual rental income</p>
+                                        <h5>6-12% per year</h5>
+                                    </div>
+                                    <div class="current_body-details-info">
+                                        <p>Installment</p>
+                                        <h5>80 months</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="current-container">
+                            <div class="current_img-container">
+                                <a href="#"><img width="360" height="244" src="./images/pages/estate/krakov.webp"
+                                        alt="current offer town image">
+                                    <p class="current_img-text">95 300$</p>
+                                </a>
+                            </div>
+                            <div class="current_body-container">
+                                <div class="current_location-container">
+                                    <img width="16" height="16" src="./images/sections/svg/location.svg"
+                                        alt="location img">
+                                    <p>Poland</p>
+                                </div>
+                                <a class="current_body-title" href="#">Two-room apartment in Krakow</a>
+                                <p class="current_body-subtitle">Apartment from the developer</p>
+                                <div class="current_body-details">
+                                    <div class="current_body-details-info">
+                                        <p>Area</p>
+                                        <h5>36,77<sup>2</sup></h5>
+                                    </div>
+                                    <div class="current_body-details-info">
+                                        <p>Number of rooms</p>
+                                        <h5>2</h5>
+                                    </div>
+                                    <div class="current_body-details-info">
+                                        <p>Floor</p>
+                                        <h5>9</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="current-container">
+                            <div class="current_img-container">
+                                <a href="#"><img width="360" height="244"
+                                        src="./images/sections/current-offers/thessaloniki.webp"
+                                        alt="current offer town image">
+                                    <p class="current_img-text">50 000$</p>
+                                </a>
+                            </div>
+                            <div class="current_body-container">
+                                <div class="current_location-container">
+                                    <img width="16" height="16" src="./images/sections/svg/location.svg"
+                                        alt="location img">
+                                    <p>Greece</p>
+                                </div>
+                                <a class="current_body-title" href="#">Budget apartment in Thessaloniki</a>
+                                <p class="current_body-subtitle">Studio apartment on the fifth floor</p>
+                                <div class="current_body-details">
+                                    <div class="current_body-details-info">
+                                        <p>Square footage</p>
+                                        <h5>30m<sup>2</sup></h5>
+                                    </div>
+                                    <div class="current_body-details-info">
+                                        <p>Year of construction</p>
+                                        <h5>2007</h5>
+                                    </div>
+                                    <div class="current_body-details-info">
+                                        <p>Distance to the sea</p>
+                                        <h5>900m</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="current-container">
+                            <div class="current_img-container">
+                                <a href="#"><img width="360" height="244"
+                                        src="./images/sections/current-offers/royal-palm.webp"
+                                        alt="current offer town image">
+                                    <p class="current_img-text">165 000$</p>
+                                </a>
+                            </div>
+                            <div class="current_body-container">
+                                <div class="current_location-container">
+                                    <img width="16" height="16" src="./images/sections/svg/location.svg"
+                                        alt="location img">
+                                    <p>Panama</p>
+                                </div>
+                                <a class="current_body-title" href="#">Royal Palm Apartments Complex</a>
+                                <p class="current_body-subtitle">With ultra-modern design and architecture</p>
+                                <div class="current_body-details">
+                                    <div class="current_body-details-info">
+                                        <p>Ocean view</p>
+                                        <h5>From all apartments</h5>
+                                    </div>
+                                    <div class="current_body-details-info">
+                                        <p>Year of construction</p>
+                                        <h5>2017</h5>
+                                    </div>
+                                    <div class="current_body-details-info">
+                                        <p>Apartments</p>
+                                        <h5>From 70m<sup>2</sup></h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="current-container">
+                            <div class="current_img-container">
+                                <a href="#"><img width="360" height="244"
+                                        src="./images/sections/current-offers/batumi.jpeg"
+                                        alt="current offer town image">
+                                    <p class="current_img-text">60 000$</p>
+                                </a>
+                            </div>
+                            <div class="current_body-container">
+                                <div class="current_location-container">
+                                    <img width="16" height="16" src="./images/sections/svg/location.svg"
+                                        alt="location img">
+                                    <p>Georgia</p>
+                                </div>
+                                <a class="current_body-title" href="#">Wyndham Batumi Wave Complex</a>
+                                <p class="current_body-subtitle">Eco-friendly neighborhood, 150m to the sea</p>
+                                <div class="current_body-details">
+                                    <div class="current_body-details-info">
+                                        <p>Profit</p>
+                                        <h5>5-7%</h5>
+                                    </div>
+                                    <div class="current_body-details-info">
+                                        <p>Year of construction</p>
+                                        <h5>2025</h5>
+                                    </div>
+                                    <div class="current_body-details-info">
+                                        <p>Installment plan</p>
+                                        <h5>Over 30 months</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="current-container">
+                            <div class="current_img-container">
+                                <a href="#"><img width="360" height="244"
+                                        src="./images/sections/current-offers/bahamas.webp"
+                                        alt="current offer town image">
+                                    <p class="current_img-text">127 000$</p>
+                                </a>
+                            </div>
+                            <div class="current_body-container">
+                                <div class="current_location-container">
+                                    <img width="16" height="16" src="./images/sections/svg/location.svg"
+                                        alt="location img">
+                                    <p>Northern Cyprus</p>
+                                </div>
+                                <a class="current_body-title" href="#">Bagami Complex with Mediterranean Sea View</a>
+                                <p class="current_body-subtitle">Complex near Girne (Kyrenia) and the famous Alagadi
+                                    Beach
+                                </p>
+                                <div class="current_body-details">
+                                    <div class="current_body-details-info">
+                                        <p>First installment</p>
+                                        <h5>35%</h5>
+                                    </div>
+                                    <div class="current_body-details-info">
+                                        <p>0% installment</p>
+                                        <h5>Over 4 years</h5>
+                                    </div>
+                                    <div class="current_body-details-info">
+                                        <p>Delivery of the complex</p>
+                                        <h5>June 2026</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="current-container">
+                            <div class="current_img-container">
+                                <a href="#"><img width="360" height="244"
+                                        src="./images/sections/current-offers/pafos.webp"
+                                        alt="current offer town image">
+                                    <p class="current_img-text">175 000$</p>
+                                </a>
+                            </div>
+                            <div class="current_body-container">
+                                <div class="current_location-container">
+                                    <img width="16" height="16" src="./images/sections/svg/location.svg"
+                                        alt="location img">
+                                    <p>Southern Cyprus</p>
+                                </div>
+                                <a class="current_body-title" href="#">1-bedroom apartments in Upper Paphos</a>
+                                <p class="current_body-subtitle">Complex with modern design and luxurious finishes</p>
+                                <div class="current_body-details">
+                                    <div class="current_body-details-info">
+                                        <p>Covered area</p>
+                                        <h5>50m<sup>2</sup></h5>
+                                    </div>
+                                    <div class="current_body-details-info">
+                                        <p>Status</p>
+                                        <h5>New construction</h5>
+                                    </div>
+                                    <div class="current_body-details-info">
+                                        <p>Number of rooms</p>
+                                        <h5>1</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_container">
+
+            <div>
+                <a href="#">
+                    <img width="120" height="90" src="./images/sections/svg/logo_white.svg" alt="Helios Rental">
+                </a>
+
+                <h3 class="footer_title">VIP Realty Company Helios Rental</h3>
+
+                <p class="footer_copyright">All rights reserved &copy; 2024</p>
+            </div>
+
+            <div class="footer_menu">
+                <h3 class="footer_menu-title">Menu</h3>
+
+                <ul class="footer_menu-list">
+                    <li>
+                        <a class="footer_menu-link" href="./estate.html">Real estate</a>
+                    </li>
+                    <li>
+                        <a class="footer_menu-link" href="#">Counties</a>
+                    </li>
+                    <li>
+                        <a class="footer_menu-link" href="./aboutus.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="footer_menu-link" href="#">Contacts</a>
+                    </li>
+                    <li>
+                        <a class="footer_menu-link" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer_contacts">
+
+                <h3 class="footer_contacts-title">Contacts</h3>
+
+                <a class="footer_phone" href="tel:+380668471889">+38 (066) 847 18-89</a>
+
+                <a class="footer_mail" href="mailto:vrcukraine.odessa@gmail.com">helios.rental@gmail.com</a>
+
+                <ul class="footer__socials">
+                    <li class="footer__socials__item">
+                        <a href="#" class="footer__socials__link" aria-label="facebook link">
+                            <span class="footer__socials__icon footer__socials__icon_facebook"></span>
+                        </a>
+                    </li>
+                    <li class="footer__socials__item">
+                        <a href="#" class="footer__socials__link" aria-label="youtube link">
+                            <span class="footer__socials__icon footer__socials__icon_youtube"></span>
+                        </a>
+                    </li>
+                    <li class="footer__socials__item">
+                        <a href="#" class="footer__socials__link" aria-label="instagram link">
+                            <span class="footer__socials__icon footer__socials__icon_instagram"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./js/components/header.js"></script>
+
+</body>
+
+</html>
