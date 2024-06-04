@@ -98,7 +98,7 @@
         }
 
         > :nth-child(odd):not(:last-child)::after {
-            content: url('../../images/sections/svg/line_down.svg');
+            content: url('../images/sections/svg/line_down.svg');
             position: absolute;
             z-index: 98;
             right: -70px;
@@ -106,7 +106,7 @@
         }
 
         > :nth-child(even)::after {
-            content: url('../../images/sections/svg/line_up.svg');
+            content: url('../images/sections/svg/line_up.svg');
             position: absolute;
             z-index: 98;
             right: -70px;
