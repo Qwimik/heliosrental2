@@ -17,3 +17,34 @@ $screen__m: 768px;
 $screen__l: 1024px;
 $screen__xl: 1240px;
 $screen__xxl: 1440px;
+
+// DASHBOARD
+
+:root {
+    --body-color: #e4e9f7;
+    --sidebar-color: #fff;
+    --primary-color: #870909;
+    --primary-color-light: #f6f5ff;
+    --toggle-color: #ddd;
+    --text-color: #707070;
+
+    --tran-02: all 0.2s ease-out;
+    --tran-03: all 0.3s ease-out;
+    --tran-04: all 0.4s ease-out;
+    --tran-05: all 0.5s ease-out;
+}
+
+.dashboard {
+    // height: 100vh;
+    background: var(--body-color);
+    transition: var(--tran-05);
+
+    &.dark {
+        --body-color: #18191a;
+        --sidebar-color: #242526;
+        --primary-color: #3a3b3c;
+        --primary-color-light: #3a3b3c;
+        --toggle-color: #fff;
+        --text-color: #ccc;
+    }
+}

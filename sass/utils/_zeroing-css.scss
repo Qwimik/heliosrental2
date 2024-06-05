@@ -1,21 +1,36 @@
 // Box sizing reset
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 // Remove default margin
-body, h1, h2, h3, h4, h5, h6, p, figure, blockquote, dl, dd {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
   margin: 0;
 }
 
 // Remove default padding
-ul, ol {
+ul,
+ol {
   padding: 0;
   margin: 0;
 }
 
 // Remove default list styling
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -41,13 +56,19 @@ a {
 }
 
 // Button and input reset
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   font: inherit;
   margin: 0;
 }
 
 // Remove built-in form typography styles
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
@@ -55,7 +76,10 @@ input, button, textarea, select {
 
 // Remove all animations and transitions for people that prefer not to see them
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -64,7 +88,8 @@ input, button, textarea, select {
 }
 
 // Ensure images fill their containers
-img, picture {
+img,
+picture {
   max-width: 100%;
   display: block;
 }
@@ -131,7 +156,14 @@ details summary::-webkit-details-marker {
 }
 
 // Ensure block elements fill their containers
-article, aside, footer, header, nav, section, main, figure {
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figure {
   display: block;
 }
 
