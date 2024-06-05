@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Dashboard sidebar menu</title>
+</head>
+
+<body class="dashboard">
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image_text">
+                <!-- <span class="image"> -->
+                <i class='bx bxs-universal-access image'></i>
+                <!-- </span> -->
+                <div class="text header_text">
+                    <span class="name ">CodingLab</span>
+                    <span class="profession ">Web developer</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+
+        </header>
+
+        <div class="menu_bar">
+            <div class="menu-block">
+
+                <div class="search_box">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+
+                <ul class="menu_links">
+                    <li class="nav_link">
+                        <a href="#">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav_text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                            <span class="text nav_text">Revenue</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#">
+                            <i class='bx bx-bell icon'></i>
+                            <span class="text nav_text">Notifications</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#">
+                            <i class='bx bx-pie-chart-alt icon'></i>
+                            <span class="text nav_text">Analytics</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#">
+                            <i class='bx bx-heart icon'></i>
+                            <span class="text nav_text">Likes</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav_text">Wallets</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom_content">
+                <div class="logout_box">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav_text">Logout</span>
+                    </a>
+                </div>
+
+                <div class="mode">
+                    <div class="moon_sun">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+
+                    <span class="mode_text text">Dark Mode</span>
+                    <div class="toggle_switch">
+                        <span class="switch"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="text">Dashboard</div>
+    </section>
+
+    <script src="./js/account.js"></script>
+</body>
+
+</html>
