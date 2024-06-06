@@ -162,6 +162,20 @@ body.dark .logout_box a:hover .nav_text {
     color: var(--text-color);
 }
 
+.active-page,
+.sidebar li .active-page .icon,
+.sidebar li .active-page .text {
+    color: var(--sidebar-color);
+    background: var(--primary-color);
+}
+
+body.dark .active-page,
+body.dark .sidebar li .active-page .icon,
+body.dark .sidebar li .active-page .text {
+    color: var(--text-color);
+    background: var(--primary-color);
+}--primary-color
+
 .sidebar .search_box {
     background: var(--primary-color-light);
     border-radius: 6px;
@@ -276,4 +290,17 @@ body.dark .switch::before {
 .sidebar.close~.home {
     left: 88px;
     width: calc(100% - 88px);
+}
+
+.hidden {
+    display: none;
+}
+
+.menu_bar::-webkit-scrollbar {
+    width: 2px
+}
+
+.menu_bar::-webkit-scrollbar-thumb {
+    background-color: $color-red-bg;
+    border-radius: 5px;
 }
