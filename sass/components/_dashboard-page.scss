@@ -1,0 +1,115 @@
+.dashboard {
+    &_list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding-top: 50px;
+    }
+
+    &_item {
+        position: relative;
+        background-color: $color-white;
+        border-radius: 6px;
+        padding: 10px 20px;
+
+        &-accent {
+            background: var(--toggle-color);
+        }
+    }
+
+    &_title {
+        text-align: center;
+        font-size: 18px;
+        padding-bottom: 10px;
+    }
+
+    &_balance {
+        text-align: center;
+    }
+
+    &_text {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+
+    &_icon-container {
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .icon {
+            color: $color-white;
+        }
+
+        &--orange {
+            background: linear-gradient(90deg, rgb(255, 179, 0) 20%, rgb(252, 254, 142) 100%);
+        }
+
+        &--red {
+            background: linear-gradient(90deg, rgb(255, 2, 2) 20%, rgb(255, 124, 124) 100%);
+        }
+
+        &--green {
+            background: linear-gradient(90deg, rgb(12, 147, 0) 20%, rgb(144, 255, 129) 100%);
+        }
+
+        &--blue {
+            background: linear-gradient(90deg, rgb(0, 122, 147) 20%, rgb(129, 249, 255) 100%);
+        }
+    }
+}
+
+@media screen and (min-width: $screen__xs ) {
+    .dashboard {
+        &_list {
+            padding-left: 88px;
+        }
+    }
+}
+
+@media screen and (min-width: $screen__m ) {
+    .dashboard {
+        &_list {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &_item {
+            height: 110px;
+        }
+    }
+}
+
+@media screen and (min-width: $screen__xl) {
+    .dashboard {
+        &_list {
+            padding-top: 100px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &_item {
+            padding: 20px 40px;
+        }
+
+        &_title {
+            font-size: 24px;
+        }
+
+        &_text {
+            font-size: 18px;
+            padding-bottom: 15px;
+        }
+
+
+        &_price,
+        &_balance {
+            font-size: 18px;
+        }
+
+    }
+}
