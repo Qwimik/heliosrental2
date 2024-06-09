@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="./images/sections/svg/fivicon.svg" type="image/x-icon">
+    <title>Dashboard sidebar menu</title>
+</head>
+
+<body class="dashboard">
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image_text">
+                <div class="dashboard_logo">
+                    <img class="dashboard_logo-img black-logo" width="60" height="40"
+                        src="../../images/sections/svg/logo_black.svg" alt="logo dashboard">
+                    <img class="dashboard_logo-img white-logo" width="60" height="40"
+                        src="../../images/sections/svg/logo_white.svg" alt="logo dashboard">
+                </div>
+                <div class="text header_text">
+                    <span class="name hidden ">Helios Rental</span>
+                    <span class="profession hidden ">Web developer</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+
+        </header>
+
+        <div class="menu_bar">
+            <div class="menu-block">
+
+                <div class="search_box hidden">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+
+                <ul class="menu_links">
+                    <li class="nav_link">
+                        <a href="./index.html">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav_text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="./account.html">
+                            <i class='bx bxs-dashboard icon'></i>
+                            <span class="text nav_text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="./account-pages/deposit.html">
+                            <i class='bx bx-credit-card icon'></i>
+                            <span class="text nav_text">Deposit</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="./investment-plan.html" class="active-page">
+                            <i class='bx bx-trending-up icon'></i>
+                            <span class="text nav_text">Investment Plan</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#">
+                            <i class='bx bx-briefcase-alt-2 icon'></i>
+                            <span class="text nav_text">Transactions</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#">
+                            <i class='bx bx-coin-stack icon'></i>
+                            <span class="text nav_text">Earnings Log</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav_text">Payouts</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#">
+                            <i class='bx bx-cog icon'></i>
+                            <span class="text nav_text">Support</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="#">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav_text">Profile</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom_content">
+                <div class="logout_box">
+                    <a href="#">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav_text">Logout</span>
+                    </a>
+                </div>
+
+                <div class="mode">
+                    <div class="moon_sun">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+
+                    <span class="mode_text text">Dark Mode</span>
+                    <div class="toggle_switch">
+                        <span class="switch"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+    <main>
+        <section class="header-account">
+            <h2 class="header-account_title">Investment Plan</h2>
+            <div class="header-account_user-container">
+                <div class="header-account_user-container--icon"><a class="header-account_user-link" href="#"><i
+                            class='bx bx-user icon header-account_user-icon'></i>
+                    </a></div>
+                <p class="header-account_user-name">User</p>
+            </div>
+        </section>
+        <section class="investment_plan_section">
+            <div class="investment_plan_wrapper">
+                <div class="investment_plan_container container">
+                    <ul class="investment_plan_cards">
+                        <li class="investment_plan_card">
+                            <div class="investment_plan_card_container">
+                                <div class="investment_plan_card_img">
+                                    <img height="300px" src="../images/pages/account/investment-card1.png" alt="Jumeirah">
+                                    <div class="investment_plan_card_img_placeholder">
+                                        <h3 class="investment_plan_card_placeholder_title">Jumeirah GT 2 Bonus</h3>
+                                        <p class="investment_plan_card_placeholder_subtitle">Jumeirah Resort and Spa</p>
+                                    </div>
+                                </div>
+                                <div class="investment_plan_card_content">
+                                    <ul class="investment_plan_card_ranges">
+                                        <li class="investment_plan_card_range">
+                                            <p class="investment_plan_card_range_title">Profit Range</p>
+                                            <p class="investment_plan_card_range_count_profit">131</p>
+                                        </li>
+                                        <li class="investment_plan_card_range">
+                                            <p class="investment_plan_card_range_title">Loss Range</p>
+                                            <p class="investment_plan_card_range_count_loss">10</p>
+                                        </li>
+                                    </ul>
+                                    <div class="investment_plan_card_content_line"></div>
+                                    <ul class="investment_plan_card_prices">
+                                        <li class="investment_plan_card_price">
+                                            <p class="investment_plan_card_price_title">Minimum invest</p>
+                                            <p class="investment_plan_card_price_count_min">$8,100.00</p>
+                                        </li>
+                                        <li class="investment_plan_card_price">
+                                            <p class="investment_plan_card_price_title">Maximum invest</p>
+                                            <p class="investment_plan_card_price_count_max">$10,500.00</p>
+                                        </li>
+                                        <li class="investment_plan_card_price">
+                                            <p class="investment_plan_card_price_title">Return For</p>
+                                            <p class="investment_plan_card_price_info">Yearly</p>
+                                        </li>
+                                        <li class="investment_plan_card_price">
+                                            <p class="investment_plan_card_price_title">Capital Back</p>
+                                            <p class="investment_plan_card_price_info">Yes</p>
+                                        </li>
+                                    </ul>
+                                    <div class="investment_plan_card_content_line"></div>
+                                    <div class="investment_plan_card_actions">
+                                        <button class="investment_plan_card_invest_now" type="button">Invest Now</button>
+                                        <button class="investment_plan_card_invest_balance" type="button">Invest Using Balance</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="investment_plan_card">
+                            <div class="investment_plan_card_container">
+                                <div class="investment_plan_card_img">
+                                    <img height="300px" src="../images/pages/account/investment-card1.png" alt="Jumeirah">
+                                    <div class="investment_plan_card_img_placeholder">
+                                        <h3 class="investment_plan_card_placeholder_title">Jumeirah GT 2 Bonus</h3>
+                                        <p class="investment_plan_card_placeholder_subtitle">Jumeirah Resort and Spa</p>
+                                    </div>
+                                </div>
+                                <div class="investment_plan_card_content">
+                                    <ul class="investment_plan_card_ranges">
+                                        <li class="investment_plan_card_range">
+                                            <p class="investment_plan_card_range_title">Profit Range</p>
+                                            <p class="investment_plan_card_range_count_profit">131</p>
+                                        </li>
+                                        <li class="investment_plan_card_range">
+                                            <p class="investment_plan_card_range_title">Loss Range</p>
+                                            <p class="investment_plan_card_range_count_loss">10</p>
+                                        </li>
+                                    </ul>
+                                    <div class="investment_plan_card_content_line"></div>
+                                    <ul class="investment_plan_card_prices">
+                                        <li class="investment_plan_card_price">
+                                            <p class="investment_plan_card_price_title">Minimum invest</p>
+                                            <p class="investment_plan_card_price_count_min">$8,100.00</p>
+                                        </li>
+                                        <li class="investment_plan_card_price">
+                                            <p class="investment_plan_card_price_title">Maximum invest</p>
+                                            <p class="investment_plan_card_price_count_max">$10,500.00</p>
+                                        </li>
+                                        <li class="investment_plan_card_price">
+                                            <p class="investment_plan_card_price_title">Return For</p>
+                                            <p class="investment_plan_card_price_info">Yearly</p>
+                                        </li>
+                                        <li class="investment_plan_card_price">
+                                            <p class="investment_plan_card_price_title">Capital Back</p>
+                                            <p class="investment_plan_card_price_info">Yes</p>
+                                        </li>
+                                    </ul>
+                                    <div class="investment_plan_card_content_line"></div>
+                                    <div class="investment_plan_card_actions">
+                                        <button class="investment_plan_card_invest_now" type="button">Invest Now</button>
+                                        <button class="investment_plan_card_invest_balance" type="button">Invest Using Balance</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="investment_plan_card">
+                            <div class="investment_plan_card_container">
+                                <div class="investment_plan_card_img">
+                                    <img height="300px" src="../images/pages/account/investment-card1.png" alt="Jumeirah">
+                                    <div class="investment_plan_card_img_placeholder">
+                                        <h3 class="investment_plan_card_placeholder_title">Jumeirah GT 2 Bonus</h3>
+                                        <p class="investment_plan_card_placeholder_subtitle">Jumeirah Resort and Spa</p>
+                                    </div>
+                                </div>
+                                <div class="investment_plan_card_content">
+                                    <ul class="investment_plan_card_ranges">
+                                        <li class="investment_plan_card_range">
+                                            <p class="investment_plan_card_range_title">Profit Range</p>
+                                            <p class="investment_plan_card_range_count_profit">131</p>
+                                        </li>
+                                        <li class="investment_plan_card_range">
+                                            <p class="investment_plan_card_range_title">Loss Range</p>
+                                            <p class="investment_plan_card_range_count_loss">10</p>
+                                        </li>
+                                    </ul>
+                                    <div class="investment_plan_card_content_line"></div>
+                                    <ul class="investment_plan_card_prices">
+                                        <li class="investment_plan_card_price">
+                                            <p class="investment_plan_card_price_title">Minimum invest</p>
+                                            <p class="investment_plan_card_price_count_min">$8,100.00</p>
+                                        </li>
+                                        <li class="investment_plan_card_price">
+                                            <p class="investment_plan_card_price_title">Maximum invest</p>
+                                            <p class="investment_plan_card_price_count_max">$10,500.00</p>
+                                        </li>
+                                        <li class="investment_plan_card_price">
+                                            <p class="investment_plan_card_price_title">Return For</p>
+                                            <p class="investment_plan_card_price_info">Yearly</p>
+                                        </li>
+                                        <li class="investment_plan_card_price">
+                                            <p class="investment_plan_card_price_title">Capital Back</p>
+                                            <p class="investment_plan_card_price_info">Yes</p>
+                                        </li>
+                                    </ul>
+                                    <div class="investment_plan_card_content_line"></div>
+                                    <div class="investment_plan_card_actions">
+                                        <button class="investment_plan_card_invest_now" type="button">Invest Now</button>
+                                        <button class="investment_plan_card_invest_balance" type="button">Invest Using Balance</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="investment_plan_card">
+                            <div class="investment_plan_card_container">
+                                <div class="investment_plan_card_img">
+                                    <img height="300px" src="../images/pages/account/investment-card1.png" alt="Jumeirah">
+                                    <div class="investment_plan_card_img_placeholder">
+                                        <h3 class="investment_plan_card_placeholder_title">Jumeirah GT 2 Bonus</h3>
+                                        <p class="investment_plan_card_placeholder_subtitle">Jumeirah Resort and Spa</p>
+                                    </div>
+                                </div>
+                                <div class="investment_plan_card_content">
+                                    <ul class="investment_plan_card_ranges">
+                                        <li class="investment_plan_card_range">
+                                            <p class="investment_plan_card_range_title">Profit Range</p>
+                                            <p class="investment_plan_card_range_count_profit">131</p>
+                                        </li>
+                                        <li class="investment_plan_card_range">
+                                            <p class="investment_plan_card_range_title">Loss Range</p>
+                                            <p class="investment_plan_card_range_count_loss">10</p>
+                                        </li>
+                                    </ul>
+                                    <div class="investment_plan_card_content_line"></div>
+                                    <ul class="investment_plan_card_prices">
+                                        <li class="investment_plan_card_price">
+                                            <p class="investment_plan_card_price_title">Minimum invest</p>
+                                            <p class="investment_plan_card_price_count_min">$8,100.00</p>
+                                        </li>
+                                        <li class="investment_plan_card_price">
+                                            <p class="investment_plan_card_price_title">Maximum invest</p>
+                                            <p class="investment_plan_card_price_count_max">$10,500.00</p>
+                                        </li>
+                                        <li class="investment_plan_card_price">
+                                            <p class="investment_plan_card_price_title">Return For</p>
+                                            <p class="investment_plan_card_price_info">Yearly</p>
+                                        </li>
+                                        <li class="investment_plan_card_price">
+                                            <p class="investment_plan_card_price_title">Capital Back</p>
+                                            <p class="investment_plan_card_price_info">Yes</p>
+                                        </li>
+                                    </ul>
+                                    <div class="investment_plan_card_content_line"></div>
+                                    <div class="investment_plan_card_actions">
+                                        <button class="investment_plan_card_invest_now" type="button">Invest Now</button>
+                                        <button class="investment_plan_card_invest_balance" type="button">Invest Using Balance</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/account.js"></script>
+</body>
+
+</html>
