@@ -1,12 +1,41 @@
-const body = document.querySelector('.dashboard');
-const sidebar = body.querySelector('.sidebar');
-const toggle = body.querySelector('.toggle');
-const searchBtn = body.querySelector('.search_box');
-const modeSwitch = body.querySelector('.toggle_switch');
-const modeText = body.querySelector('.mode_text');
-const logoWhite = body.querySelector('.white-logo');
-const logoBlack = body.querySelector('.black-logo');
+const body = document.querySelector('.dashboard'),
+    sidebar = body.querySelector('.sidebar'),
+    toggle = body.querySelector('.toggle'),
+    searchBtn = body.querySelector('.search_box'),
+    modeSwitch = body.querySelector('.toggle_switch'),
+    modeText = body.querySelector('.mode_text'),
+    logoWhite = body.querySelector('.white-logo'),
+    logoBlack = body.querySelector('.black-logo');
 
+function updateTheme() {
+    if (body.classList.contains('dark')) {
+        modeText.innerText = 'Light Mode';
+        logoBlack.style.display = 'none';
+        logoWhite.style.display = 'block';
+    } else {
+        modeText.innerText = 'Dark Mode';
+        logoBlack.style.display = 'block';
+        logoWhite.style.display = 'none';
+    }
+}
+
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    body.classList.add(savedTheme);
+    updateTheme();
+}
+
+modeSwitch.addEventListener('click', () => {
+    body.classList.toggle('dark');
+    
+    if (body.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.removeItem('theme');
+    }
+    
+    updateTheme();
+});
 
 toggle.addEventListener('click', () => {
     sidebar.classList.toggle('close');
@@ -14,19 +43,4 @@ toggle.addEventListener('click', () => {
 
 searchBtn.addEventListener('click', () => {
     sidebar.classList.remove('close');
-});
-
-modeSwitch.addEventListener('click', () => {
-    body.classList.toggle('dark');
-
-    if (body.classList.contains('dark')) {
-        modeText.innerText = 'Light Mode'
-        logoBlack.style.display = 'none';
-        logoWhite.style.display = 'block';
-        
-    } else {
-        modeText.innerText = 'Dark Mode'
-        logoBlack.style.display = 'block';
-        logoWhite.style.display = 'none';
-    }
 });
