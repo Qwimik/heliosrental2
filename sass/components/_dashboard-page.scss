@@ -17,7 +17,8 @@
         transition: var(--tran-05);
 
         &-accent {
-            background: var(--toggle-color);
+            color: $color_white;
+            background: linear-gradient(155deg, #fc8585, #b10909, #de2121, #900d0d);
         }
     }
 

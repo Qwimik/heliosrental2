@@ -5,17 +5,26 @@
     margin-left: auto;
     padding: 5px 10px;
     text-transform: uppercase;
-    background-color: $color-red;
+    background: linear-gradient(155deg, #e65252, #b10909, #de2121, #900d0d);
     color: $color-white;
     font-weight: 500;
     display: flex;
     align-items: baseline;
     gap: 5px;
     cursor: pointer;
+}
 
-    &:hover {
-        background-color: $color-red-bg;
-    }
+.make_deposit-btn:hover {
+    background: linear-gradient(155deg, #900d0d, #ff0101, #de2121);
+    background-size: 800% 800%;
+
+    animation: gradient 13s ease infinite;
+}
+
+@keyframes gradient {
+    0%{background-position:0% 10%}
+    50%{background-position:100% 91%}
+    100%{background-position:0% 10%}
 }
 
 .make_deposit-modal {
