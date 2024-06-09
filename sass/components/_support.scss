@@ -1,0 +1,39 @@
+.support {
+    &_section {
+        padding: 50px 0;
+    }
+
+    &_create_link {
+        background-color: $color-red;
+        color: $color-white;
+        border-radius: 4px;
+        padding: 5px 10px;
+        transition: background-color 0.3s ease-out;
+
+        &:hover {
+            background-color: $color-red-bg;
+        }
+
+        &_container {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    &_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 200px;
+        color: var(--text-color);
+    }
+}
+
+@media screen and (min-width: $screen__m) {
+    .support {
+        &_section {
+            padding: 50px 0 50px 88px;
+        }
+    }
+}

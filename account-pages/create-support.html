@@ -83,13 +83,13 @@
                         </a>
                     </li>
                     <li class="nav_link">
-                        <a href="./support.html">
+                        <a href="./support.html" class="active-page">
                             <i class='bx bx-cog icon'></i>
                             <span class="text nav_text">Support</span>
                         </a>
                     </li>
                     <li class="nav_link">
-                        <a href="./profile.html" class="active-page">
+                        <a href="./profile.html">
                             <i class='bx bx-user icon'></i>
                             <span class="text nav_text">Profile</span>
                         </a>
@@ -122,7 +122,7 @@
 
     <main>
         <section class="header-account">
-            <h2 class="header-account_title">Profile</h2>
+            <h2 class="header-account_title">Open Ticket</h2>
             <div class="header-account_user-container">
                 <div class="header-account_user-container--icon"><a class="header-account_user-link" href="#"><i
                             class='bx bx-user icon header-account_user-icon'></i>
@@ -134,31 +134,31 @@
             <div class="profile_wrapper">
                 <div class="profile_container container">
                     <div class="profile_content">
-                        <h2 class="profile_title">Update your profile</h2>
+                        <h2 class="profile_title">New ticket</h2>
                         <form action="#" class="profile_form">
-                            <label for="fullname" class="profile_label">
-                                <span class="profile_span">Full Name</span>
-                                <input type="text" name="fullname" class="profile_input" placeholder="Full Name">
+                            <label for="subject" class="profile_label">
+                                <span class="profile_span">Subject</span>
+                                <input type="text" name="subject" class="profile_input" placeholder="Enter subject">
                             </label>
-                            <label for="email" class="profile_label">
-                                <span class="profile_span">Email</span>
-                                <input type="email" name="email" class="profile_input" placeholder="Email Address">
+                            <label for="reference" class="profile_label">
+                                <span class="profile_span">Reference</span>
+                                <input type="text" name="reference" class="profile_input" placeholder="Transactions reference number">
                             </label>
-                            <label for="avatar" class="profile_label">
-                                <span class="profile_span">Avatar</span>
-                                <input type="file" name="avatar" class="profile_input">
+                            <label for="priority" class="profile_label">
+                                <span class="profile_span">Priority</span>
+                                <select type="text" name="priority" class="profile_input">
+                                    <option value="Low">Low</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="High">High</option>
+                                </select>
                             </label>
-                            <label for="phone" class="profile_label">
-                                <span class="profile_span">Phone</span>
-                                <input type="text" name="phone" class="profile_input">
+                            <label for="image" class="profile_label">
+                                <span class="profile_span">Select Images for attachment</span>
+                                <input type="file" name="image" class="profile_input">
                             </label>
-                            <label for="oldPass" class="profile_label">
-                                <span class="profile_span">Old password</span>
-                                <input type="password" name="oldPass" class="profile_input">
-                            </label>
-                            <label for="newPass" class="profile_label">
-                                <span class="profile_span">New password</span>
-                                <input type="password" name="newPass" class="profile_input">
+                            <label for="details" class="profile_label">
+                                <span class="profile_span">Details</span>
+                                <textarea type="text" rows="4" name="details" class="profile_input" placeholder="Description"></textarea>
                             </label>
                             <button class="profile_submit">Save</button>
                         </form>
