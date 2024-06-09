@@ -27,6 +27,8 @@ $screen__xxl: 1440px;
     --primary-color-light: #f6f5ff;
     --toggle-color: #ddd;
     --text-color: #707070;
+    --text-color-card: #18191a;
+    --card-shadow: 0px 0px 5px 1px #00000045;
 
     --tran-02: all 0.2s ease-out;
     --tran-03: all 0.3s ease-out;
@@ -45,5 +47,7 @@ $screen__xxl: 1440px;
         --primary-color-light: #3a3b3c;
         --toggle-color: #fff;
         --text-color: #ccc;
+        --text-color-card: #fff;
+        --card-shadow: 0px 0px 5px 1px #ffffff45;
     }
 }

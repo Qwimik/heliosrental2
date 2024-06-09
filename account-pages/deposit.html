@@ -123,16 +123,74 @@
 
         <section class="header-account">
             <h2 class="header-account_title">Deposit</h2>
-            <div class="header-account_user-container"><a class="header-account_user-link" href="#"><i
-                        class='bx bx-user icon header-account_user-icon'></i></a></div>
+            <div class="header-account_user-container">
+                <div class="header-account_user-container--icon">
+                    <a class="header-account_user-link" href="#">
+                        <i class='bx bx-user icon header-account_user-icon'></i>
+                    </a>
+                </div>
+                <p class="header-account_user-name">User</p>
+            </div>
         </section>
 
-        <section class="deposit-section">
-            <div class="container"></div>
+        <section class="dashboard-section">
+            <div class="container">
+                <button class="make_deposit-btn" type="button">
+                    <i class='bx bx-money-withdraw'></i>
+                    Make deposit</button>
+                <ul class="dashboard_list">
+                    <li class="dashboard_item">
+                        <h4 class="dashboard_text">Total Deposit</h4>
+                        <h4 class="dashboard_price">$0.00</h4>
+                        <div class="dashboard_icon-container dashboard_icon-container--red">
+                            <i class='bx bxs-hand-up icon'></i>
+                        </div>
+                    </li>
+                    <li class="dashboard_item">
+                        <h4 class="dashboard_text">Pending Deposit</h4>
+                        <h4 class="dashboard_price">$0.00</h4>
+                        <div class="dashboard_icon-container dashboard_icon-container--green">
+                            <i class='bx bx-coin-stack icon'></i>
+                        </div>
+                    </li>
+                    <li class="dashboard_item">
+                        <h4 class="dashboard_text">Regected Deposit</h4>
+                        <h4 class="dashboard_price">$0.00</h4>
+                        <div class="dashboard_icon-container dashboard_icon-container--blue">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                        </div>
+                    </li>
+                    <li class="dashboard_item">
+                        <h4 class="dashboard_text">Total Loss</h4>
+                        <h4 class="dashboard_price">$0</h4>
+                        <div class="dashboard_icon-container dashboard_icon-container--red">
+                            <i class='bx bx-bar-chart-alt-2 icon'></i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
 
+
+    <div class="make_deposit-modal" id="make_deposit-modal">
+        <div class="make_deposit-modal-content">
+            <h3 class="make_deposit-title">Make Deposit</h3>
+            <p>Enter amount</p>
+            <form>
+                <label class="make_deposit-label">$
+                    <input class="make_deposit-input" type="number" placeholder="0.00">
+                </label>
+                <button type="submit" class="make-deposit-btn-deposits">
+                    <i class='bx bx-money-withdraw'></i>
+                    Deposits</button>
+            </form>
+            <button id="close-btn" class="make_deposit-close">x</button>
+        </div>
+    </div>
+
     <script src="../../js/account.js"></script>
+    <script src="../js/components/make-deposit-modal.js"></script>
 </body>
 
 </html>

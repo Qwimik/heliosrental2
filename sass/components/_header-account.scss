@@ -48,10 +48,11 @@
     }
 }
 
-@media screen and (max-width: $screen__m) {
+@media screen and (max-width: $screen__xs) {
     .header-account {
         &_title {
             font-size: 18px;
+            padding: 0;
         }
 
         &_user-container {
