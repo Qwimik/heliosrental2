@@ -26,6 +26,10 @@
         gap: 10px;
     }
 
+    &_user-name {
+        color: var(--text-color);
+    }
+
     &_user-container--icon {
         width: 30px;
         height: 30px;
@@ -43,7 +47,6 @@
         transition: color var(--tran-05);
     }
 }
-
 
 @media screen and (max-width: $screen__m) {
     .header-account {

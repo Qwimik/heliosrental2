@@ -4,7 +4,9 @@ const toggle = body.querySelector('.toggle');
 const searchBtn = body.querySelector('.search_box');
 const modeSwitch = body.querySelector('.toggle_switch');
 const modeText = body.querySelector('.mode_text');
-const logoDashboard = body.querySelector('.dashboard_logo-img');
+const logoWhite = body.querySelector('.white-logo');
+const logoBlack = body.querySelector('.black-logo');
+
 
 toggle.addEventListener('click', () => {
     sidebar.classList.toggle('close');
@@ -19,9 +21,12 @@ modeSwitch.addEventListener('click', () => {
 
     if (body.classList.contains('dark')) {
         modeText.innerText = 'Light Mode'
-        logoDashboard.src = './images/sections/svg/logo_white-text.svg';
+        logoBlack.style.display = 'none';
+        logoWhite.style.display = 'block';
+        
     } else {
         modeText.innerText = 'Dark Mode'
-        logoDashboard.src = './images/sections/svg/logo_black.svg';
+        logoBlack.style.display = 'block';
+        logoWhite.style.display = 'none';
     }
 });
