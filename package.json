@@ -7,7 +7,9 @@
     "build": "sass ./sass/main.scss:./css/styles.css",
     "build-min": "sass ./sass/main.scss:./css/styles.min.css --style compressed",
     "watch": "sass --watch ./sass/main.scss:./css/styles.css",
-    "watch-min": "sass --watch ./sass/main.scss:./css/styles.min.css --style compressed"
+    "watch-min": "sass --watch ./sass/main.scss:./css/styles.min.css --style compressed",
+    "build-min-login":"sass ./sass/login.scss:./css/styles-login.min.css --style compressed",
+    "watch-min-login": "sass --watch ./sass/login.scss:./css/styles-login.min.css --style compressed"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,149 @@
+@import './utils/zeroing-css';
+@import './utils/fonts';
+@import './utils/variables';
+
+
+.login {
+    &_wrapper {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+        background: url('../images/pages/login/login-bg.png') no-repeat center / cover;
+
+        &_bg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+    }
+    &_container {
+        position: relative;
+        z-index: 2;
+        padding: 30px 25px 20px;
+        height: 100%;
+
+        &_bg {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background: #ffffffc3;
+            filter: blur(5px);
+        }
+    }
+    &_content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+    &_logo_link {
+        img {
+            width: 100px;
+        }
+    }
+    &_title {
+        color: $color-bg-dark;
+        margin-bottom: -10px;
+    }
+    &_form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+
+        &_input {
+            min-width: 290px;
+            padding: 16px;
+            border: 1px solid #a6a6a691;
+            border-radius: 4px;
+            box-shadow: none;
+            outline: none;
+            transition: box-shadow 0.3s ease-out, border 0.3s ease-out;
+
+            &:focus, &:hover, &:active {
+                border: 1px solid #64646491;
+                box-shadow: 1px 1px 5px 0 #64646491;
+            }
+        }
+
+        &_password {
+            &_label {
+                position: relative;
+            }
+            &_input {
+                padding: 16px 50px 16px 16px;
+            }
+            &_show {
+                position: absolute;
+                top: 16px;
+                right: 12px;
+                color: $color-bg-dark;
+                transition: color 0.3s ease-out;
+
+                &:hover {
+                    color: $color-red;
+                }
+
+                &_icon {
+                    display: none;
+                    width: 24px;
+                    height: 24px;
+                    mask: url('../images/pages/login/show-pass.svg') no-repeat center / contain;
+                    background-color: currentColor;
+                }
+            }
+            &_hide_icon {
+                display: block;
+                width: 24px;
+                height: 24px;
+                mask: url('../images/pages/login/hide-pass.svg') no-repeat center / contain;
+                background-color: currentColor;
+            }
+        }
+        &_forgot_link {
+            margin-bottom: 10px;
+            margin-left: auto;
+            font-size: 12px;
+            color: $color-red;
+            transition: color 0.3s ease-out;
+
+            &:hover, &:focus {
+                color: $color-red-bg;
+                text-decoration: underline;
+            }
+        }
+        &_submit {
+            padding: 15px 30px;
+            width: 100%;
+            background-color: $color-red;
+            transition: background-color .3s ease-out;
+            color: #fff;
+            border-radius: 4px;
+            text-transform: uppercase;
+
+            &:hover, &:focus {
+                background-color: $color-red-bg;
+            }
+        }
+    }
+    &_register_link {
+        padding: 15px 15px;
+        color: $color-bg-dark;
+        transition: color 0.3s ease-out;
+        font-size: 16px;
+        border-radius: 4px;
+        margin-top: -10px;
+
+        &:hover, &:focus {
+            color: $color-red-bg;
+            text-decoration: underline;
+        }
+    }
+}
