@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/styles.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="icon" href="../images/sections/svg/fivicon.svg" type="image/x-icon">
-    <title>Dashboard sidebar menu</title>
+    <title>Dashboard - Profile</title>
 </head>
 
 <body class="dashboard">
@@ -47,19 +47,19 @@
                         </a>
                     </li>
                     <li class="nav_link">
-                        <a href="../account.html" class="active-page">
+                        <a href="../account.html">
                             <i class='bx bxs-dashboard icon'></i>
                             <span class="text nav_text">Dashboard</span>
                         </a>
                     </li>
                     <li class="nav_link">
-                        <a href="./account-pages/deposit.html">
+                        <a href="./deposit.html">
                             <i class='bx bx-credit-card icon'></i>
                             <span class="text nav_text">Deposit</span>
                         </a>
                     </li>
                     <li class="nav_link">
-                        <a href="#">
+                        <a href="./investment-plan.html">
                             <i class='bx bx-trending-up icon'></i>
                             <span class="text nav_text">Investment Plan</span>
                         </a>
@@ -89,7 +89,7 @@
                         </a>
                     </li>
                     <li class="nav_link">
-                        <a href="#">
+                        <a href="./profile.html" class="active-page">
                             <i class='bx bx-user icon'></i>
                             <span class="text nav_text">Profile</span>
                         </a>
@@ -122,7 +122,7 @@
 
     <main>
         <section class="header-account">
-            <h2 class="header-account_title">Dashboard</h2>
+            <h2 class="header-account_title">Profile</h2>
             <div class="header-account_user-container">
                 <div class="header-account_user-container--icon"><a class="header-account_user-link" href="#"><i
                             class='bx bx-user icon header-account_user-icon'></i>
@@ -130,11 +130,43 @@
                 <p class="header-account_user-name">User</p>
             </div>
         </section>
-
+        <section class="profile_section">
+            <div class="profile_wrapper">
+                <div class="profile_container container">
+                    <div class="profile_content">
+                        <h2 class="profile_title">Update your profile</h2>
+                        <form action="#" class="profile_form">
+                            <label for="fullname" class="profile_label">
+                                <span class="profile_span">Full Name</span>
+                                <input type="text" name="fullname" class="profile_input" placeholder="Full Name">
+                            </label>
+                            <label for="email" class="profile_label">
+                                <span class="profile_span">Email</span>
+                                <input type="email" name="email" class="profile_input" placeholder="Email Address">
+                            </label>
+                            <label for="avatar" class="profile_label">
+                                <span class="profile_span">Avatar</span>
+                                <input type="file" name="avatar" class="profile_input">
+                            </label>
+                            <label for="phone" class="profile_label">
+                                <span class="profile_span">Phone</span>
+                                <input type="text" name="phone" class="profile_input">
+                            </label>
+                            <label for="oldPass" class="profile_label">
+                                <span class="profile_span">Old password</span>
+                                <input type="password" name="oldPass" class="profile_input">
+                            </label>
+                            <label for="newPass" class="profile_label">
+                                <span class="profile_span">New password</span>
+                                <input type="password" name="newPass" class="profile_input">
+                            </label>
+                            <button class="profile_submit">Save</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
-
-
     <script src="../js/account.js"></script>
 </body>
 

@@ -1,0 +1,86 @@
+.profile {
+    &_section {
+        padding: 50px 0;
+    }
+    &_content {
+        padding: 20px;
+        color: $color_bg_dark;
+        background-color: $color_white;
+        box-shadow: 0px 0px 5px 1px #00000045;
+        border-radius: 4px;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+    body.dark &_content {
+        color: $color_white;
+        background-color: var(--sidebar-color);
+        box-shadow: 0px 0px 5px 1px #ffffff45;
+    }
+    &_title {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    &_form {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin-top: 15px;
+    }
+    &_label {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+    &_input {
+        padding: 10px;
+        background-color: $color_white;
+        color: $color_bg_dark;
+        border: 1px solid $color_bg_dark;
+        border-radius: 4px;
+        &:focus, &:active {
+            outline: none;
+        }
+    }
+    body.dark &_input {
+        color: $color_white;
+        background-color: var(--sidebar-color);
+    }
+    &_submit {
+        background-color: $color-red;
+        color: $color_white;
+        padding: 10px 15px;
+        border-radius: 4px;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease-out;
+
+        &:hover {
+            background-color: $color-red-bg;
+        }
+    }
+}
+
+@media screen and (min-width: $screen__m) {
+    .profile {
+        &_section {
+            padding: 50px 0 50px 88px;
+        }
+    }
+}
+
+@media screen and (min-width: $screen__l) {
+    .profile {
+        &_content {
+            max-width: 1000px;
+        }
+        &_form {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        &_label {
+            grid-column: span 2 / span 2;
+        }
+        &_submit {
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+    }
+}
