@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.min.css">
+    <link rel="stylesheet" href="../../css/styles.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="./images/sections/svg/fivicon.svg" type="image/x-icon">
+    <link rel="icon" href='../images/sections/svg/fivicon.svg' type="image/x-icon">
     <title>Dashboard sidebar menu</title>
 </head>
 
@@ -16,8 +16,10 @@
         <header>
             <div class="image_text">
                 <div class="dashboard_logo">
-                    <img class="dashboard_logo-img" width="60" height="40" src="./images/sections/svg/logo_black.svg"
-                        alt="logo dashboard">
+                    <img class="dashboard_logo-img black-logo" width="60" height="40"
+                        src="../../images/sections/svg/logo_black.svg" alt="logo dashboard">
+                    <img class="dashboard_logo-img white-logo" width="60" height="40"
+                        src="../../images/sections/svg/logo_white.svg" alt="logo dashboard">
                 </div>
                 <div class="text header_text">
                     <span class="name hidden ">Helios Rental</span>
@@ -117,14 +119,20 @@
 
         </div>
     </nav>
+    <main>
 
-    <section class="header-account">
-        <h2 class="header-account_title">Dashboard</h2>
-        <div class="header-account_user-container"><a class="header-account_user-link" href="#"><i
-                    class='bx bx-user icon header-account_user-icon'></i></a></div>
-    </section>
+        <section class="header-account">
+            <h2 class="header-account_title">Deposit</h2>
+            <div class="header-account_user-container"><a class="header-account_user-link" href="#"><i
+                        class='bx bx-user icon header-account_user-icon'></i></a></div>
+        </section>
 
-    <script src="./js/account.js"></script>
+        <section class="deposit-section">
+            <div class="container"></div>
+        </section>
+    </main>
+
+    <script src="../../js/account.js"></script>
 </body>
 
 </html>
