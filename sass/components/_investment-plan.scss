@@ -13,6 +13,7 @@
         border-radius: 4px;
         overflow: hidden;
         background-color: $color_white;
+        box-shadow: 0px 0px 5px 1px #00000045;
         max-width: 405px;
 
         &_container {
@@ -180,7 +181,8 @@
 }
 
 body.dark .investment_plan_card {
-    background-color: #242526;
+    background-color: var(--sidebar-color);
+    box-shadow: 0px 0px 5px 1px #ffffff45;
 }
 body.dark .investment_plan_card_content {
     color: $color_white;
