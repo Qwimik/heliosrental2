@@ -90,6 +90,9 @@ header {
             &:hover .header-top__socials__icon {
                 color: $color-bg-dark;
             }
+            &:active .header-top__socials__icon {
+                color: $color-white;
+            }
         }
 
         &__icon {
