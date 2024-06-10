@@ -37,6 +37,7 @@
         color: $color_bg_dark;
         border: 1px solid $color_bg_dark;
         border-radius: 4px;
+        width: 100%;
         &:focus, &:active {
             outline: none;
         }
