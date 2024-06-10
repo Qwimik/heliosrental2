@@ -102,16 +102,19 @@ header {
             color: $color-white;
 
             &_facebook {
+                -webkit-mask: url('../images/sections/svg/facebook.svg') no-repeat center / contain;
                 mask: url('../images/sections/svg/facebook.svg') no-repeat center / contain;
                 background-color: currentColor;
             }
 
             &_youtube {
+                -webkit-mask: url('../images/sections/svg/youtube.svg') no-repeat center / contain;
                 mask: url('../images/sections/svg/youtube.svg') no-repeat center / contain;
                 background-color: currentColor;
             }
 
             &_instagram {
+                -webkit-mask: url('../images/sections/svg/instagram.svg') no-repeat center / contain;
                 mask: url('../images/sections/svg/instagram.svg') no-repeat center / contain;
                 background-color: currentColor;
             }
