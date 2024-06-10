@@ -90,6 +90,11 @@ header {
             &:hover .header-top__socials__icon {
                 color: $color-bg-dark;
             }
+            @media screen and (max-width: $screen__m) {
+                &:hover .header-top__socials__icon {
+                    color: $color-white;
+                }
+            }
             &:active .header-top__socials__icon {
                 color: $color-white;
             }
