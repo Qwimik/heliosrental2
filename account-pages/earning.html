@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.min.css">
+    <link rel="stylesheet" href="../../css/styles.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="icon" href="./images/sections/svg/fivicon.svg" type="image/x-icon">
-    <title>Dashboard sidebar menu</title>
+    <link rel="icon" href='../images/sections/svg/fivicon.svg' type="image/x-icon">
+    <title>Dashboard- Earnings Log</title>
 </head>
 
 <body class="dashboard">
@@ -41,37 +41,37 @@
 
                 <ul class="menu_links">
                     <li class="nav_link">
-                        <a href="./index.html">
+                        <a href="../index.html">
                             <i class='bx bx-home-alt icon'></i>
                             <span class="text nav_text">Home</span>
                         </a>
                     </li>
                     <li class="nav_link">
-                        <a href="./account.html" class="active-page">
+                        <a href="../account.html">
                             <i class='bx bxs-dashboard icon'></i>
                             <span class="text nav_text">Dashboard</span>
                         </a>
                     </li>
                     <li class="nav_link">
-                        <a href="./account-pages/deposit.html">
+                        <a href="./deposit.html">
                             <i class='bx bx-credit-card icon'></i>
                             <span class="text nav_text">Deposit</span>
                         </a>
                     </li>
                     <li class="nav_link">
-                        <a href="./account-pages/investment-plan.html">
+                        <a href="./investment-plan.html">
                             <i class='bx bx-trending-up icon'></i>
                             <span class="text nav_text">Investment Plan</span>
                         </a>
                     </li>
                     <li class="nav_link">
-                        <a href="./account-pages/transactions.html">
+                        <a href="./transactions.html">
                             <i class='bx bx-briefcase-alt-2 icon'></i>
                             <span class="text nav_text">Transactions</span>
                         </a>
                     </li>
                     <li class="nav_link">
-                        <a href="#">
+                        <a href="./earning.html" class="active-page">
                             <i class='bx bx-coin-stack icon'></i>
                             <span class="text nav_text">Earnings Log</span>
                         </a>
@@ -83,13 +83,13 @@
                         </a>
                     </li>
                     <li class="nav_link">
-                        <a href="./account-pages/support.html">
+                        <a href="#">
                             <i class='bx bx-cog icon'></i>
                             <span class="text nav_text">Support</span>
                         </a>
                     </li>
                     <li class="nav_link">
-                        <a href="./account-pages/profile.html">
+                        <a href="#">
                             <i class='bx bx-user icon'></i>
                             <span class="text nav_text">Profile</span>
                         </a>
@@ -98,7 +98,7 @@
             </div>
             <div class="bottom_content">
                 <div class="logout_box">
-                    <a href="./index.html">
+                    <a href="../index.html">
                         <i class='bx bx-log-out icon'></i>
                         <span class="text nav_text">Logout</span>
                     </a>
@@ -119,89 +119,53 @@
 
         </div>
     </nav>
-
     <main>
+
         <section class="header-account">
-            <h2 class="header-account_title">Dashboard</h2>
+            <h2 class="header-account_title">Earnings Log</h2>
             <div class="header-account_user-container">
-                <div class="header-account_user-container--icon"><a class="header-account_user-link" href="#"><i
-                            class='bx bx-user icon header-account_user-icon'></i>
-                    </a></div>
+                <div class="header-account_user-container--icon">
+                    <a class="header-account_user-link" href="#">
+                        <i class='bx bx-user icon header-account_user-icon'></i>
+                    </a>
+                </div>
                 <p class="header-account_user-name">User</p>
             </div>
         </section>
 
-        <section class="dashboard-section">
+        <section class="table_section">
             <div class="container">
-                <ul class="dashboard_list">
-                    <li class="dashboard_item dashboard_item-accent">
-                        <h4 class="dashboard_title">Account Balance</h4>
-                        <h4 class="dashboard_balance">0.00 USD</h4>
-                    </li>
-                    <li class="dashboard_item">
-                        <h4 class="dashboard_text">Total Deposit</h4>
-                        <h4 class="dashboard_price">$0.00</h4>
-                        <div class="dashboard_icon-container dashboard_icon-container--red ">
-                            <i class='bx bxs-hand-up icon'></i>
-                        </div>
-                    </li>
-                    <li class="dashboard_item">
-                        <h4 class="dashboard_text">Pending Deposit</h4>
-                        <h4 class="dashboard_price">$0.00</h4>
-                        <div class="dashboard_icon-container dashboard_icon-container--green">
-                            <i class='bx bx-coin-stack icon'></i>
-                        </div>
-                    </li>
-                    <li class="dashboard_item">
-                        <h4 class="dashboard_text">Total Earnings</h4>
-                        <h4 class="dashboard_price">$0.00</h4>
-                        <div class="dashboard_icon-container dashboard_icon-container--blue">
-                            <i class='bx bx-bar-chart-alt-2 icon'></i>
-                        </div>
-                    </li>
-                    <li class="dashboard_item">
-                        <h4 class="dashboard_text">Total Loss</h4>
-                        <h4 class="dashboard_price">$0</h4>
-                        <div class="dashboard_icon-container dashboard_icon-container--red">
-                            <i class='bx bx-bar-chart-alt-2 icon'></i>
-                        </div>
-                    </li>
-                    <li class="dashboard_item">
-                        <h4 class="dashboard_text">Total Invest</h4>
-                        <h4 class="dashboard_price">$0.00</h4>
-                        <div class="dashboard_icon-container dashboard_icon-container--red">
-                            <i class='bx bxs-hand-up icon'></i>
-                        </div>
-                    </li>
-                    <li class="dashboard_item">
-                        <h4 class="dashboard_text">Current Invest</h4>
-                        <h4 class="dashboard_price">$0.00</h4>
-                        <div class="dashboard_icon-container dashboard_icon-container--orange">
-                            <i class='bx bx-pie-chart-alt-2 icon'></i>
-                        </div>
-                    </li>
-                    <li class="dashboard_item">
-                        <h4 class="dashboard_text">Total Withdraw</h4>
-                        <h4 class="dashboard_price">$0.00</h4>
-                        <div class="dashboard_icon-container dashboard_icon-container--orange">
-                            <i class='bx bx-pie-chart-alt-2 icon'></i>
-                        </div>
-                    </li>
-                    <li class="dashboard_item">
-                        <h4 class="dashboard_text">Pending Withdraw</h4>
-                        <h4 class="dashboard_price">$0.00</h4>
-                        <div class="dashboard_icon-container dashboard_icon-container--green">
-                            <i class='bx bx-coin-stack icon'></i>
-                        </div>
-                    </li>
-                </ul>
+                <div class="table">
+                    <table class="table_list">
+                        <thead>
+                            <tr class="table_head">
+                                <th class="table_head-column">S/N</th>
+                                <th class="table_head-column">Plan Name</th>
+                                <th class="table_head-column">Earning Amount</th>
+                                <th class="table_head-column">Payment Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table_body">
+                                <td class="table_body-column">1</td>
+                                <td class="table_body-column">Joseph</td>
+                                <td class="table_body-column">$100.00</td>
+                                <td class="table_body-column">$2.00</td>
+                            </tr>
+                            <tr class="table_body">
+                                <td class="table_body-column">2</td>
+                                <td class="table_body-column">Diego</td>
+                                <td class="table_body-column">$300.00</td>
+                                <td class="table_body-column">$11.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
     </main>
 
-
-
-    <script src="./js/account.js"></script>
+    <script src="../../js/account.js"></script>
 </body>
 
 </html>
