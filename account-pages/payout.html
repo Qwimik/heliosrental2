@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href='../images/sections/svg/fivicon.svg' type="image/x-icon">
+    <title>Dashboard- Payout</title>
+</head>
+
+<body class="dashboard">
+
+    <nav class="sidebar close">
+        <header>
+            <div class="image_text">
+                <div class="dashboard_logo">
+                    <img class="dashboard_logo-img black-logo" width="60" height="40"
+                        src="../images/sections/svg/logo_black.svg" alt="logo dashboard">
+                    <img class="dashboard_logo-img white-logo" width="60" height="40"
+                        src="../images/sections/svg/logo_white.svg" alt="logo dashboard">
+                </div>
+                <div class="text header_text">
+                    <span class="name hidden ">Helios Rental</span>
+                    <span class="profession hidden ">Web developer</span>
+                </div>
+            </div>
+
+            <i class='bx bx-chevron-right toggle'></i>
+
+        </header>
+
+        <div class="menu_bar">
+            <div class="menu-block">
+
+                <div class="search_box hidden">
+                    <i class='bx bx-search icon'></i>
+                    <input type="text" placeholder="Search...">
+                </div>
+
+                <ul class="menu_links">
+                    <li class="nav_link">
+                        <a href="../index.html">
+                            <i class='bx bx-home-alt icon'></i>
+                            <span class="text nav_text">Home</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="../account.html">
+                            <i class='bx bxs-dashboard icon'></i>
+                            <span class="text nav_text">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="./deposit.html">
+                            <i class='bx bx-credit-card icon'></i>
+                            <span class="text nav_text">Deposit</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="./investment-plan.html">
+                            <i class='bx bx-trending-up icon'></i>
+                            <span class="text nav_text">Investment Plan</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="./transactions.html">
+                            <i class='bx bx-briefcase-alt-2 icon'></i>
+                            <span class="text nav_text">Transactions</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="./earning.html">
+                            <i class='bx bx-coin-stack icon'></i>
+                            <span class="text nav_text">Earnings Log</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="./payout.html" class="active-page">
+                            <i class='bx bx-wallet icon'></i>
+                            <span class="text nav_text">Payouts</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="./support.html">
+                            <i class='bx bx-cog icon'></i>
+                            <span class="text nav_text">Support</span>
+                        </a>
+                    </li>
+                    <li class="nav_link">
+                        <a href="./profile.html">
+                            <i class='bx bx-user icon'></i>
+                            <span class="text nav_text">Profile</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom_content">
+                <div class="logout_box">
+                    <a href="../index.html">
+                        <i class='bx bx-log-out icon'></i>
+                        <span class="text nav_text">Logout</span>
+                    </a>
+                </div>
+
+                <div class="mode">
+                    <div class="moon_sun">
+                        <i class='bx bx-moon icon moon'></i>
+                        <i class='bx bx-sun icon sun'></i>
+                    </div>
+
+                    <span class="mode_text text">Dark Mode</span>
+                    <div class="toggle_switch">
+                        <span class="switch"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+    <main>
+
+        <section class="header-account">
+            <h2 class="header-account_title">Payout</h2>
+            <div class="header-account_user-container">
+                <div class="header-account_user-container--icon">
+                    <a class="header-account_user-link" href="#">
+                        <i class='bx bx-user icon header-account_user-icon'></i>
+                    </a>
+                </div>
+                <p class="header-account_user-name">User</p>
+            </div>
+        </section>
+
+
+        <section class="payout_section">
+            <div class="container">
+                <div class="balance">
+                    <h3 class="balance_title">Your balance</h3>
+                    <div class="balance_content">
+                        <p class="balance_text">Available to pay out to you</p>
+                        <p class="balance_count">$0.00</p>
+                    </div>
+                    <div class="balance_content">
+                        <p class="balance_text">Currently on the way to your bank account</p>
+                        <p class="balance_count">$3,824.00</p>
+                    </div>
+                </div>
+
+                <div class="receive">
+                    <h3 class="receive_title">Receive payments directly with USDT</h3>
+                    <p class="receive_text">Account not connected</p>
+                    <a href="./payout-setUp.html" class="receive_btn">Set up</a>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="../../js/account.js"></script>
+</body>
+
+</html>
