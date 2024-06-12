@@ -99,12 +99,6 @@
         }
     }
 
-    @media screen and (min-width: $screen__l) {
-        .services_content {
-            grid-template-columns: repeat(3, 1fr);
-        }
-    }
-
     .services_card {
         max-width: 540px;
         border-radius: 4px;
