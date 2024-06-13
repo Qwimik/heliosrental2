@@ -39,9 +39,8 @@
         position: relative;
         z-index: 99;
         margin-top: 30px;
-        display: grid;
-        grid-template-columns: 1fr;
-        justify-items: center;
+        display: flex;
+        flex-direction: column;
         gap: 30px;
 
         > :nth-child(1) {
@@ -57,54 +56,16 @@
             background-size: cover;
             background-position: center;
         }
-
-        > :nth-child(3) {
-            background-image: linear-gradient(45deg, rgba(0, 0, 0, .33), rgba(0, 0, 0, .05)),
-                url('../images/sections/services/services3.jpeg');
-            background-size: cover;
-            background-position: center;
-        }
-
-        > :nth-child(4) {
-            background-image: linear-gradient(45deg, rgba(0, 0, 0, .33), rgba(0, 0, 0, .05)),
-                url('../images/sections/services/services4.webp');
-            background-size: cover;
-            background-position: center;
-        }
-
-        > :nth-child(5) {
-            background-image: linear-gradient(45deg, rgba(0, 0, 0, .33), rgba(0, 0, 0, .05)),
-                url('../images/sections/services/services5.jpeg');
-            background-size: cover;
-            background-position: center;
-        }
-
-        > :nth-child(6) {
-            background-image: linear-gradient(45deg, rgba(0, 0, 0, .33), rgba(0, 0, 0, .05)),
-                url('../images/sections/services/services6.webp');
-            background-size: cover;
-            background-position: center;
-        }
     }
 
-    @media screen and (max-width: $screen__s) {
-        .services_content {
-            grid-template-columns: repeat(1, 1fr);
-        }
-    }
-
-    @media screen and (min-width: $screen__m) {
-        .services_content {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
 
     .services_card {
         max-width: 540px;
         border-radius: 4px;
+        margin: 0 auto;
 
         h4 {
-            padding-top: 20%;
+            padding-top: 35%;
             padding-bottom: 20%;
             padding-left: 10px;
             font-size: 19px;
@@ -122,6 +83,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            height: 150px;
 
             p {
                 text-align: left;
@@ -156,32 +118,27 @@
     }
 
 
-
-    @media only screen and (min-width: $screen__s) {
-        .services_card {
-            max-width: 300px;
-            display: grid;
-            grid-template-rows: repeat(2, 1fr);
-        }
-    }
-
     @media screen and (min-width: $screen__l) {
+        .services_content {
+            flex-direction: row;
+            justify-content: center;
+        }
+
         .services_card {
             position: relative;
             overflow: hidden;
-            width: 300px;
+            width: 50%;
             height: 450px;
         }
 
         .services_card-info {
             position: absolute;
-            transform: translateY(150%);
-            height: 350px;
-            transition: transform 0.4s ease-out;
+            bottom: -155px;
+            height: 150px;
+            transition: bottom 0.4s ease-out;
         }
 
         .services_card:hover .services_card-info {
             bottom: 0;
-            transform: translateY(0);
         }
     }
