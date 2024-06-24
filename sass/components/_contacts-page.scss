@@ -68,10 +68,6 @@
         align-items: center;
         gap: 20px;
 
-        &_item {
-
-        }
-
         &_link {
             position: relative;
 
@@ -151,7 +147,6 @@
 @media screen and (min-width: $screen__l) {
     .contacts_contact {
         &_content {
-            grid-template-columns: repeat(3, 1fr);
             justify-items: center;
         }
     }

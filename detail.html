@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./images/sections/svg/fivicon.svg" type="image/x-icon">
     <link rel="stylesheet" href="./css/styles.min.css">
-    <title>About Us</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="../images/sections/svg/fivicon.svg" type="image/x-icon">
+    <title>Budgetary appartment in Thessaloniki</title>
 </head>
 
 <body>
@@ -46,7 +48,7 @@
                                     <a href="./services.html">Services</a>
                                 </li>
                                 <li>
-                                    <a class="menu-nav_active" href="./contacts.html">Contacts</a>
+                                    <a href="./contacts.html">Contacts</a>
                                 </li>
                                 <li>
                                     <a href="./login.html">Sign In</a>
@@ -69,16 +71,16 @@
                             <a class="menu_desktop_link" href="./index.html">Home</a>
                         </li>
                         <li class="menu_desktop_item">
-                            <a class="menu_desktop_link" href="./estate.html">Estate</a>
+                            <a class="menu_desktop_link " href="./estate.html">Estate</a>
                         </li>
                         <li class="menu_desktop_item">
-                            <a class="menu_desktop_link" href="./aboutus.html">About us</a>
+                            <a class="menu_desktop_link " href="./aboutus.html">About us</a>
                         </li>
                         <li class="menu_desktop_item">
                             <a class="menu_desktop_link" href="./services.html">Services</a>
                         </li>
                         <li class="menu_desktop_item">
-                            <a class="menu_desktop_link menu_desktop_link_active" href="./contacts.html">Contacts</a>
+                            <a class="menu_desktop_link" href="./contacts.html">Contacts</a>
                         </li>
                         <li class="menu_desktop_item">
                             <a class="menu_desktop_link" href="./login.html">Sign In</a>
@@ -115,64 +117,131 @@
         </div>
     </header>
     <main>
-        <section class="hero_pages_section">
-            <div class="hero_pages_wrapper_contacts">
+        <section class="hero_pages_section detail_hero_section">
+            <div class="hero_pages_wrapper_estate">
                 <div class="container">
                     <div class="hero_pages_content">
                         <div class="hero_pages_icon"></div>
-                        <h1 class="hero_pages_title">Contacts</h1>
+                        <h1 style="text-align: center;" class="hero_pages_title">Budgetary appartment in Thessaloniki</h1>
+                        <button type="button" class="hero_pages_subtitle">Watch more photo</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="contacts_contact_section">
-            <div class="contacts_contact_wrapper">
-                <div class="container">
-                    <div class="contacts_contact_content">
-                        <div class="contacts_contact_column1">
-                            <div class="contacts_contact_column1"></div>
-                            <p class="contacts_contact_text_accent">Address</p>
-                            <p class="contacts_contact_text">Zolotoustivska St, 44/22, Kyiv</p>
-                        </div>
-                        <div class="contacts_contact_column2">
-                            <p class="contacts_contact_text_accent">Contacts</p>
-                            <div class="contacts_contact_text_container">
-                                <a class="contacts_contact_text_link" href="tel:+380668471889">+38 (066) 847 18-89</a>
-                                <a class="contacts_contact_text_link"
-                                    href="mailto:vrcukraine.odessa@gmail.com">helios.rental@gmail.com</a>
-                            </div>
+        <section class="detail_section">
+            <div class="tabs">
+                <button class="tab-button" data-tab="information"> 
+                    <i class='bx bx-info-circle detail__icon'></i>
+                    <span>Information</span>
+                </button>
+                <button class="tab-button" data-tab="gallery">
+                    <i class='bx bx-image detail__icon'></i>
+                    <span>Gallery</span>
+                </button>
+            </div>
+            <div class="container relative">
+                <div class="tab-content" id="information">
+                    <div class="tab-content_wrapper">
+                        <div class="tab-content_information-content">
+                            <h2 class="tab-content__title">Budgetary appartment in Thessaloniki, Greece</h2>
+                            <p class="tab-content__price">50 000 $</p>
+                            <p class="tab-content__text">
+                                An apartment of 30 square meters is for sale in Thessaloniki.
+                            </p>
+                            <p class="tab-content__text">
+                                The apartment is located on the fifth floor and consists of a living room with a kitchen and one
+                                shower room.
+                            </p>
+                            <p class="tab-content__text">
+                                The windows offer a view of the city.
+                            </p>
+                            <p class="tab-content__text">
+                                The facility has heating.
+                            </p>
+                            <p class="tab-content__text">
+                                The building has an elevator.
+                            </p>
+                            <ul class="tab-content__more-info">
+                                <li class="tab-content__more-info--item">
+                                    <h4>Region:</h4>
+                                    <p>Thessaloniki</p>
+                                </li>
+                                <li class="tab-content__more-info--item">
+                                    <h4>Type:</h4>
+                                    <p>Apparment</p>
+                                </li>
+                                <li class="tab-content__more-info--item">
+                                    <h4>Area:</h4>
+                                    <p>30 m<sup>2</sup></p>
+                                </li>
+                                <li class="tab-content__more-info--item">
+                                    <h4>Floor:</h4>
+                                    <p>5</p>
+                                </li>
+                                <li class="tab-content__more-info--item">
+                                    <h4>Year of construction</h4>
+                                    <p>2007</p>
+                                </li>
+                                <li class="tab-content__more-info--item">
+                                    <h4>Distance from the sea</h4>
+                                    <p>900 m</p>
+                                </li>
+                                <li class="tab-content__more-info--item">
+                                    <h4>Distance to the airport</h4>
+                                    <p>20 km</p>
+                                </li>
+                                <li class="tab-content__more-info--item">
+                                    <h4>Number of rooms:</h4>
+                                    <p>1</p>
+                                </li>
+                                <li class="tab-content__more-info--item">
+                                    <h4>Type of heating:</h4>
+                                    <p>Gas</p>
+                                </li>
+                                <li class="tab-content__more-info--item">
+                                    <h4>Elevator:</h4>
+                                    <p><i class='bx bx-check'></i></p>
+                                </li>
+                                <li class="tab-content__more-info--item">
+                                    <h4>Entrance:</h4>
+                                    <p><i class='bx bx-check'></i></p>
+                                </li>
+                                <li class="tab-content__more-info--item">
+                                    <h4>Double glazing:</h4>
+                                    <p><i class='bx bx-check'></i></p>
+                                </li>
+                            </ul>
+                            <div class="gallery">
+                                <p>Gallery here</p>
+                                <button type="button" class="detail_gallery_btn">See all photos</button>
+                           </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="check_list_section">
-            <div class="check_list_wrapper">
-                <div class="check_list_bg"></div>
-                <div class="container">
-                    <div class="check_list_container">
-                        <h2 class="check_list_title">Get a checklist of investment attractive countries</h2>
-                        <h3 class="check_list_subtitle">Fill out the form and we will send a checklist to your e-mail
-                        </h3>
-                        <form class="check_list_form" action="#">
-                            <label for="check_list_name" class="check_list_form_label">
-                                <input class="check_list_form_input" type="text" autocomplete="off" id="nameCheckList"
-                                    placeholder="Name">
-                                <span class="check_list_form_input_icon check_list_form_input_icon_name"></span>
-                            </label>
-                            <label for="check_list_phoneNumber" class="check_list_form_label">
-                                <input class="check_list_form_input" type="text" autocomplete="off"
-                                    id="phoneNumberCheckList" placeholder="Phone">
-                                <span class="check_list_form_input_icon check_list_form_input_icon_phone"></span>
-                            </label>
-                            <label for="email" class="check_list_form_label">
-                                <input class="check_list_form_input" type="email" autocomplete="off" id="emailCheckList"
-                                    placeholder="Email">
-                                <span class="check_list_form_input_icon check_list_form_input_icon_email"></span>
-                            </label>
-                            <button type="submit" class="check_list_form_submit_btn">Submit</button>
-                        </form>
-                    </div>
+                <div class="tab-content tab-content_gallery" id="gallery">
+                    <p>Gallery here</p>
+                </div>
+                <div class="tab-content_information-form">
+                    <h4 class="tab-content_information-form_title">Get a free consultation</h4>
+                    <p class="tab-content_information-form_subtitle">We will answer all your questions</p>
+                    <form class="tab-content_information-form_form" action="#">
+                        <label for="name" class="tab-content_information-form_label">
+                            <input class="tab-content_information-form_input" type="text" autocomplete="off" id="name"
+                                placeholder="Name">
+                            <span class="tab-content_information-form_input_icon tab-content_information-form_input_icon_name"></span>
+                        </label>
+                        <label for="phoneNumber" class="tab-content_information-form_label">
+                            <input class="tab-content_information-form_input" type="text" autocomplete="off" id="phoneNumber"
+                                placeholder="Phone">
+                            <span class="tab-content_information-form_input_icon tab-content_information-form_input_icon_phone"></span>
+                        </label>
+                        <label for="email" class="tab-content_information-form_label">
+                            <input class="tab-content_information-form_input" type="email" autocomplete="off" id="email"
+                                placeholder="Email">
+                            <span class="tab-content_information-form_input_icon tab-content_information-form_input_icon_email"></span>
+                        </label>
+                        <button type="submit" class="tab-content_information-form_submit_btn">Submit</button>
+                    </form>
                 </div>
             </div>
         </section>
@@ -195,7 +264,7 @@
 
                 <ul class="footer_menu-list">
                     <li>
-                        <a class="footer_menu-link" href="#">Real estate</a>
+                        <a class="footer_menu-link" href="./estate.html">Real estate</a>
                     </li>
                     <li>
                         <a class="footer_menu-link" href="#">Counties</a>
@@ -223,7 +292,10 @@
             </div>
         </div>
     </footer>
-    <script type="module" src="./js/aboutus.js"></script>
+
+    <script type="module" src="./js/components/header.js"></script>
+    <script type="module" src="./js/components/details.js"></script>
+
 </body>
 
 </html>
