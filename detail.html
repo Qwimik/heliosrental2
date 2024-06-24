@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/sections/svg/fivicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/styles.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="../images/sections/svg/fivicon.svg" type="image/x-icon">
+    <title>Detail</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <div class="wrapper">
+            <div class="container">
+                <div class="header content header-top">
+                    <a class="header-top__phone-link" href="tel:+380999999999">
+                        <img class="header-top__phone-img" src="./images/sections/svg/phone.svg" width="22" height="22"
+                            alt="phone">
+                        <span class="header-top__phone-text">+38 (099) 999-99-99</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper_menu_desktop">
+            <div class="container">
+                <div class="menu_desktop">
+                    <button id="burger-btn" class="burger-btn">&#9776;</button>
+                    <div id="menu" class="menu">
+                        <a href="./index.html" class="menu_mobile_logo" title="Helios Rental">
+                            <img width="70" src="./images/sections/svg/logo_black.svg" alt="Helios Rental">
+                        </a>
+                        <button id="close-btn" class="menu_mobile_close_btn" aria-label="close menu button"></button>
+                        <nav class="menu-nav">
+                            <ul>
+                                <li>
+                                    <a href="./index.html">Home</a>
+                                </li>
+                                <li>
+                                    <a href="./estate.html">Estate</a>
+                                </li>
+                                <li>
+                                    <a href="./aboutus.html">About us</a>
+                                </li>
+                                <li>
+                                    <a href="./services.html">Services</a>
+                                </li>
+                                <li>
+                                    <a href="./contacts.html">Contacts</a>
+                                </li>
+                                <li>
+                                    <a href="./login.html">Sign In</a>
+                                </li>
+                                <li class="menu_mobile_item_tel">
+                                    <a class="menu_mobile_link" href="tel:+380999999999">
+                                        <span class="menu_mobile_icon"></span>
+                                        <span class="menu_mobile_link_phone-text">+38 (099) 999-99-99</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div id="overlay" class="overlay"></div>
+                    <a href="./index.html" class="menu_desktop_logo" title="Helios Rental">
+                        <img width="70" src="./images/sections/svg/logo_black.svg" alt="Helios Rental">
+                    </a>
+                    <ul class="menu_desktop_list">
+                        <li class="menu_desktop_item">
+                            <a class="menu_desktop_link" href="./index.html">Home</a>
+                        </li>
+                        <li class="menu_desktop_item">
+                            <a class="menu_desktop_link " href="./estate.html">Estate</a>
+                        </li>
+                        <li class="menu_desktop_item">
+                            <a class="menu_desktop_link " href="./aboutus.html">About us</a>
+                        </li>
+                        <li class="menu_desktop_item">
+                            <a class="menu_desktop_link" href="./services.html">Services</a>
+                        </li>
+                        <li class="menu_desktop_item">
+                            <a class="menu_desktop_link" href="./contacts.html">Contacts</a>
+                        </li>
+                        <li class="menu_desktop_item">
+                            <a class="menu_desktop_link" href="./login.html">Sign In</a>
+                        </li>
+                    </ul>
+                    <button class="contact_btn" type="button">Consultation</button>
+                    <div class="contact_container">
+                        <button type="button" class="contact_close" aria-label="close"><span
+                                class="contact_close_btn"></span></button>
+                        <div class="contact_content">
+                            <h4 class="contact_form_title">Fill out the form and we will contact you</h4>
+                            <form class="contact_form" action="#">
+                                <label for="name" class="contact_form_label">
+                                    <input class="contact_form_input" type="text" autocomplete="off" id="name"
+                                        placeholder="Name">
+                                    <span class="contact_form_input_icon contact_form_input_icon_name"></span>
+                                </label>
+                                <label for="phoneNumber" class="contact_form_label">
+                                    <input class="contact_form_input" type="text" autocomplete="off" id="phoneNumber"
+                                        placeholder="Phone">
+                                    <span class="contact_form_input_icon contact_form_input_icon_phone"></span>
+                                </label>
+                                <label for="email" class="contact_form_label">
+                                    <input class="contact_form_input" type="email" autocomplete="off" id="email"
+                                        placeholder="Email">
+                                    <span class="contact_form_input_icon contact_form_input_icon_email"></span>
+                                </label>
+                                <button type="submit" class="contact_form_submit_btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero_pages_section">
+            <div class="hero_pages_wrapper_estate">
+                <div class="container">
+                    <div class="hero_pages_content">
+                        <div class="hero_pages_icon"></div>
+                        <h1 style="text-align: center;" class="hero_pages_title">Budgetary appartment in Thessaloniki
+                        </h1>
+                        <h2 style="border: 1px solid white; padding: 10px 5px; border-radius: 6px;"
+                            class="hero_pages_subtitle">Watch more photo
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="detail__section">
+            <div class="container">
+                <div class="tabs">
+                    <button class="tab-button" data-tab="information"> <i
+                            class='bx bx-info-circle detail__icon'></i>Information</button>
+                    <button class="tab-button" data-tab="gallery"><i
+                            class='bx bx-image detail__icon'></i>Gallery</button>
+                </div>
+                <div class="tab-content" id="information">
+                    <h2 class="tab-content__title">Budgetary appartment in Thessaloniki, Greece</h2>
+                    <p class="tab-content__price">50 000$</p>
+                    <p class="tab-content__text">
+                        An apartment of 30 square meters is for sale in Thessaloniki.
+                    </p>
+                    <p class="tab-content__text">
+                        The apartment is located on the fifth floor and consists of a living room with a kitchen and one
+                        shower room.
+                    </p>
+                    <p class="tab-content__text">
+                        The windows offer a view of the city.
+                    </p>
+                    <p class="tab-content__text">
+                        The facility has heating.
+                    </p>
+                    <p class="tab-content__text">
+                        The building has an elevator.
+                    </p>
+
+                    <ul class="tab-content__more-info">
+                        <li class="tab-content__more-info--item">
+                            <h4>Region:</h4>
+                            <p>Thessaloniki</p>
+                        </li>
+                        <li class="tab-content__more-info--item">
+                            <h4>Type:</h4>
+                            <p>Apparment</p>
+                        </li>
+                        <li class="tab-content__more-info--item">
+                            <h4>Area:</h4>
+                            <p>30 m<sup>2</sup></p>
+                        </li>
+                        <li class="tab-content__more-info--item">
+                            <h4>Floor:</h4>
+                            <p>5</p>
+                        </li>
+                        <li class="tab-content__more-info--item">
+                            <h4>Year of construction</h4>
+                            <p>2007</p>
+                        </li>
+                        <li class="tab-content__more-info--item">
+                            <h4>Distance from the sea</h4>
+                            <p>900 m</p>
+                        </li>
+                        <li class="tab-content__more-info--item">
+                            <h4>Distance to the airport</h4>
+                            <p>20 km</p>
+                        </li>
+                        <li class="tab-content__more-info--item">
+                            <h4>Number of rooms:</h4>
+                            <p>1</p>
+                        </li>
+                        <li class="tab-content__more-info--item">
+                            <h4>Type of heating:</h4>
+                            <p>Gas</p>
+                        </li>
+                        <li class="tab-content__more-info--item">
+                            <h4>Elevator:</h4>
+                            <p><i class='bx bx-check'></i></p>
+                        </li>
+                        <li class="tab-content__more-info--item">
+                            <h4>Entrance:</h4>
+                            <p><i class='bx bx-check'></i></p>
+                        </li>
+                        <li class="tab-content__more-info--item">
+                            <h4>Double glazing:</h4>
+                            <p><i class='bx bx-check'></i></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="gallery">
+                    <h2>Gallery</h2>
+                    <p>This is the gallery tab content.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer_container">
+
+            <div>
+                <a href="#">
+                    <img width="120" height="90" src="./images/sections/svg/logo_white.svg" alt="Helios Rental">
+                </a>
+
+                <h3 class="footer_title">Helios Rental</h3>
+
+                <p class="footer_copyright">All rights reserved &copy; 2024</p>
+            </div>
+
+            <div class="footer_menu">
+                <h3 class="footer_menu-title">Menu</h3>
+
+                <ul class="footer_menu-list">
+                    <li>
+                        <a class="footer_menu-link" href="./estate.html">Real estate</a>
+                    </li>
+                    <li>
+                        <a class="footer_menu-link" href="#">Counties</a>
+                    </li>
+                    <li>
+                        <a class="footer_menu-link" href="./aboutus.html">About Us</a>
+                    </li>
+                    <li>
+                        <a class="footer_menu-link" href="#">Contacts</a>
+                    </li>
+                    <li>
+                        <a class="footer_menu-link" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer_contacts">
+
+                <h3 class="footer_contacts-title">Contacts</h3>
+
+                <a class="footer_phone" href="tel:+380668471889">+38 (066) 847 18-89</a>
+
+                <a class="footer_mail" href="mailto:vrcukraine.odessa@gmail.com">helios.rental@gmail.com</a>
+
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="./js/components/header.js"></script>
+    <script type="module" src="./js/components/details.js"></script>
+
+</body>
+
+</html>
