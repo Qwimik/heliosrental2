@@ -14,7 +14,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Initialize the first tab as active
     tabButtons[0].classList.add('active');
     tabContents[0].classList.add('active');
 });
