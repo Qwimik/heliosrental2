@@ -16,4 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     tabButtons[0].classList.add('active');
     tabContents[0].classList.add('active');
+
+    let galleryInfo = new SimpleLightbox('.gallery-info a');
+    let gallery = new SimpleLightbox('.gallery a');
 });
