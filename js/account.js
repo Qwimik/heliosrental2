@@ -44,3 +44,9 @@ toggle.addEventListener('click', () => {
 searchBtn.addEventListener('click', () => {
     sidebar.classList.remove('close');
 });
+
+document.addEventListener('click', function(e) {
+    if (!sidebar.contains(e.target)) {
+        sidebar.classList.add('close');
+    }
+});
