@@ -49,4 +49,7 @@ document.addEventListener('click', function(e) {
     if (!sidebar.contains(e.target)) {
         sidebar.classList.add('close');
     }
+    if (e.target.closest('.nav_btn')) {
+        sidebar.classList.add('close');
+    }
 });
